@@ -291,8 +291,6 @@
          <li>>[!dislike] Callout</li>
          <li>>[!star] Callout</li>
          <li>>[!image] Callout</li>
-         <li>>[!list] Callout</li>
-         <li>>[!alert] Callout</li>
          <li>>[!sort] Callout</li>
       </ul>
    </p>

@@ -29,14 +29,11 @@
          <li>city</li>
          <li>address</li>
          <li>passport</li>
-         <li>issued</li>
          <li>bankcard</li>
-         <li>snils</li>
          <li>socials</li>
          <li>email</li>
          <li>purpose</li>
-         <li>sources</li>
-         <li>bookid</li>
+         <li>source</li>
          <li>cover</li>
          <li>author</li>
          <li>rating</li>

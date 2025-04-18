@@ -5,7 +5,7 @@ Created by Daniel (@Nordwen) | https://github.com/Nordwen/obsidian-lumines
 
 ------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.0
+Lumines Obsidian Version: 1.0.1
 Support Obsidian Version: 1.0.0+
 
 ------------------------------------------------------------------------------
@@ -2350,6 +2350,11 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    display: none;
 }
 
+/* Section: lucide-mobile-chevrons */
+.lucide-mobile-chevrons .mobile-navbar .navbar-action-flair:has(.svg-icon.lucide-chevrons-up-down) {
+   display: none;
+}
+
 /* Section: mobile-navbar */
 .mobile-navbar-actions {
    display: flex;
@@ -2617,6 +2622,14 @@ settings:
       title.ru: Кнопка «Показать фильтр»
       description: Hide the show search filter button.
       description.ru: Скрыть кнопку «Показать фильтр».
+      type: class-toggle
+      default: false
+   -
+      id: lucide-mobile-chevrons
+      title: Show mobile chevrons icon
+      title.ru: Иконка «Мобильные стрелки»
+      description: Hide the mobile chevrons icon.
+      description.ru: Скрыть иконку «Мобильные стрелки».
       type: class-toggle
       default: false
    -

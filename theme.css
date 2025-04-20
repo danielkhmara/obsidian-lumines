@@ -5,7 +5,7 @@ Created by Daniel (@Nordwen) | https://github.com/Nordwen/obsidian-lumines
 
 ------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.4
+Lumines Obsidian Version: 1.0.5
 Support Obsidian Version: 1.0.0+
 
 ------------------------------------------------------------------------------
@@ -186,6 +186,14 @@ body {
    --h4-color: var(--color-accent);
    --h5-color: var(--color-accent);
    --h6-color: var(--color-accent);
+
+   --h1-size: 1.5em;
+   --h2-size: 1.4em;
+   --h3-size: 1.3em;
+   --h4-size: 1.2em;
+   --h5-size: 1.1em;
+   --h6-size: 1.0em;
+
    --header-padding-top: .7em;
 
    /* Section: plugin-graph */
@@ -280,7 +288,6 @@ ul {
 .view-content .inline-title {
    max-width: 100%;
    overflow: hidden;
-   font-size: 1.35em;
    white-space: nowrap;
    text-overflow: ellipsis;
 }
@@ -1881,23 +1888,15 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    background-color: color-mix(in srgb, var(--color-white), transparent 40%);
 }
 
-/* Section: h-duotone */
-.h-duotone :is(h1, h2, h3, h4, h5, h6,
-.HyperMD-header.HyperMD-header-1,
-.HyperMD-header.HyperMD-header-2,
-.HyperMD-header.HyperMD-header-3,
-.HyperMD-header.HyperMD-header-4,
-.HyperMD-header.HyperMD-header-5,
-.HyperMD-header.HyperMD-header-6) {
-   padding-block: 8px;
-   font-size: 1.125rem;
-}
-
-.h-duotone {
-   --h2-color: var(--syntax-default);
-   --h4-color: var(--syntax-default);
+/* Section: h-library */
+.h-library {
+   --h6-color: var(--syntax-default);
    --bold-color: var(--syntax-default);
    --italic-color: var(--syntax-default);
+}
+
+.h-library :is(h6, .HyperMD-header.HyperMD-header-6) {
+   font-size: var(--h5-size);
 }
 
 /* Section: desktop */

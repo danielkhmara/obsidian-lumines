@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <a href="https://github.com/Nordwen/obsidian-lumines">Star Me on GitHub</a> ⭐ <a href="https://github.com/Nordwen/obsidian-lumines/issues">Suggest a Feature</a>
+  <a href="https://github.com/danielkhmara/obsidian-lumines">Star Me on GitHub</a> ⭐ <a href="https://github.com/danielkhmara/obsidian-lumines/issues">Suggest a Feature</a>
 </div>
 
 <br>
@@ -339,5 +339,5 @@
 
 <div>
   <h2>For suggestions or issues</h2>
-  <p>For suggestions or issues, open an <a href="https://github.com/Nordwen/obsidian-lumines/issues">issue</a> or submit a <a href="https://github.com/Nordwen/obsidian-lumines/pulls">pull request</a>.</p>
+  <p>For suggestions or issues, open an <a href="https://github.com/danielkhmara/obsidian-lumines/issues">issue</a> or submit a <a href="https://github.com/danielkhmara/obsidian-lumines/pulls">pull request</a>.</p>
 </div>

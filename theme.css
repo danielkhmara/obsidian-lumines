@@ -1895,63 +1895,39 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    background-color: color-mix(in srgb, var(--color-palette-white), transparent 40%);
 }
 
+/* Section: sidebar-indicator */
+.nav-file-tag {
+   color: var(--color-accent);
+   margin-left: -6%;
+   margin-right: var(--size-4-6);
+}
+
+.tree-item-inner {
+   text-overflow: ellipsis;
+   margin-right: var(--size-4-6);
+}
+
+:is(.nav-file-title, .bookmark)::after {
+   position: relative;
+   content: '';
+   width: 6px;
+   height: 6px;
+   opacity: .1;
+   flex-shrink: 0;
+   border-radius: 50%;
+   margin-right: 15px;
+   margin-inline-start: auto;
+   transform: translateY(-50%);
+   background-color: var(--color-base-70);
+   transition: opacity .5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+:is(.nav-file-title, .bookmark):is(:hover, .is-active)::after {
+   opacity: 1;
+}
+
 /* Section: desktop */
 @media (min-width: 200px) and (hover: hover) {
-   /* Section: file-tracker */
-   .nav-file-tag {
-      margin-right: var(--margin-desktop);
-      color: var(--color-accent);
-   }
-
-   .tree-item-inner.nav-file-title-content {
-      position: relative;
-      max-width: calc(100% - var(--margin-desktop));
-   }
-
-   .tree-item-self.nav-file-title::after {
-      position: absolute;
-      content: '';
-      top: 50%;
-      right: 4%;
-      width: 6px;
-      height: 6px;
-      opacity: .1;
-      border-radius: 50%;
-      background-color: var(--color-base-70);
-      transform: translateY(-50%);
-      transition: opacity .5s cubic-bezier(0.25, 0.1, 0.25, 1);
-   }
-
-   .tree-item-self.is-clickable.nav-file-title.tappable:hover::after,
-   .tree-item-self.is-clickable.nav-file-title.tappable.is-active::after {
-      opacity: 1;
-   }
-
-   /* Section: tag-tracker */
-   .tree-item-inner-text {
-      position: relative;
-      max-width: calc(100% - var(--margin-desktop));
-   }
-
-   .tree-item-self.bookmark:has(.svg-icon.lucide-file)::after {
-      position: absolute;
-      content: '';
-      top: 50%;
-      right: 4%;
-      width: 6px;
-      height: 6px;
-      opacity: .1;
-      border-radius: 50%;
-      background-color: var(--color-base-70);
-      transform: translateY(-50%);
-      transition: opacity .5s cubic-bezier(0.25, 0.1, 0.25, 1);
-   }
-
-   .tree-item-self.bookmark:has(.svg-icon.lucide-file):hover::after,
-   .tree-item-self.bookmark:has(.svg-icon.lucide-file).is-active::after {
-      opacity: 1;
-   }
-
    /* Section: properties-border */
    .metadata-property,
    .metadata-property:hover,
@@ -2120,61 +2096,6 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 
 /* Section: mobile */
 @media (max-width: 768px) and (hover: none) {
-   /* Section: file-tracker */
-   .nav-file-tag {
-      margin-right: var(--margin-mobile);
-      color: var(--color-accent);
-   }
-
-   .tree-item-inner.nav-file-title-content {
-      position: relative;
-      max-width: calc(100% - var(--margin-mobile));
-   }
-
-   .tree-item-self.nav-file-title::after {
-      position: absolute;
-      content: '';
-      top: 50%;
-      right: 8%;
-      width: 6px;
-      height: 6px;
-      opacity: .1;
-      border-radius: 50%;
-      background-color: var(--color-base-70);
-      transform: translateY(-50%);
-      transition: opacity .5s cubic-bezier(0.25, 0.1, 0.25, 1);
-   }
-
-   .tree-item-self.is-clickable.nav-file-title.tappable:hover::after,
-   .tree-item-self.is-clickable.nav-file-title.tappable.is-active::after {
-      opacity: 1;
-   }
-
-   /* Section: tag-tracker */
-   .tree-item-inner-text {
-      position: relative;
-      max-width: calc(100% - var(--margin-mobile));
-   }
-
-   .tree-item-self.bookmark:has(.svg-icon.lucide-file)::after {
-      position: absolute;
-      content: '';
-      top: 50%;
-      right: 8%;
-      width: 6px;
-      height: 6px;
-      opacity: .1;
-      border-radius: 50%;
-      background-color: var(--color-base-70);
-      transform: translateY(-50%);
-      transition: opacity .5s cubic-bezier(0.25, 0.1, 0.25, 1);
-   }
-
-   .tree-item-self.bookmark:has(.svg-icon.lucide-file):hover::after,
-   .tree-item-self.bookmark:has(.svg-icon.lucide-file).is-active::after {
-      opacity: 1;
-   }
-
    /* Section: sidebar-title */
    .workspace-drawer-header-name-text {
       white-space: nowrap;

@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.9
+Lumines Obsidian Version: 1.0.10
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -312,16 +312,16 @@ ul {
 
 /* Section: codeblock */
 .HyperMD-codeblock-begin {
-   border-top: 1px solid var(--color-base-10);
+   border-top: 1px solid var(--color-base-10) !important;
    border-radius: var(--border-radius-m) var(--border-radius-m) 0 0 !important;
 }
 
 .HyperMD-codeblock.HyperMD-codeblock-bg {
-   border-inline: 1px solid var(--color-base-10);
+   border-inline: 1px solid var(--color-base-10) !important;
 }
 
 .HyperMD-codeblock-end {
-   border-bottom: 1px solid var(--color-base-10);
+   border-bottom: 1px solid var(--color-base-10) !important;
    border-radius: 0 0 var(--border-radius-m) var(--border-radius-m) !important;
 }
 
@@ -1158,6 +1158,24 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    background-repeat: no-repeat;
    background-position: center;
    margin-left: var(--size-4-1);
+}
+
+.metadata-property:focus-within {
+   box-shadow: none;
+}
+
+.metadata-property-key:focus-within,
+.metadata-property-value:focus-within {
+   background-color: transparent;
+}
+
+.multi-select-pill,
+.multi-select-pill:hover {
+   border: 0;
+}
+
+.multi-select-pill:focus::after {
+   box-shadow: none;
 }
 
 /* Section: dark-properties-icons */

@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.7
+Lumines Obsidian Version: 1.0.9
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -438,26 +438,71 @@ ul.dataview-ul {
    padding: .5rem 0 .5rem;
 }
 
-.dataview.dataview-error {
-   font-weight: 600;
-   font-size: small;
-   border-radius: 8px;
-   color: var(--color-palette-red);
-   background-color: var(--color-base-05);
+.block-language-dataview.node-insert-event > table > tbody > tr > td > ul > li {
+   margin-inline-start: 0px;
 }
 
-.dataview.dataview-error-box > .dataview-error-message {
-   font-size: x-small;
-   font-weight: normal;
-   color: var(--color-palette-red);
+.dataview.dataview-error {
+   position: relative;
+   overflow: hidden;
+   border: none;
+   font-size: 0.6em;
+   font-weight: 600;
+   background-color: transparent;
+   font-family: var(--font-default);
+}
+
+.dataview.dataview-error::before {
+   position: absolute;
+   content: '';
+   inset: -20%;
+   background:
+      radial-gradient(
+         circle at 50% 100%,
+         hsla(0, 94%, 65%, 0.15) 0%,
+         transparent 60%
+      );
+   animation:
+      cosmic-pulse 8s cubic-bezier(0.4, 0, 0.2, 1) infinite,
+      gentle-drift 16s linear infinite;
+   opacity: .7;
+   filter: blur(8px);
 }
 
 .dataview.dataview-error-box {
+   position: relative;
+   overflow: hidden;
    border: none;
+   font-size: 0.6em;
+   font-weight: 600;
 }
 
-.block-language-dataview.node-insert-event > table > tbody > tr > td > ul > li {
-   margin-inline-start: 0px;
+.dataview.dataview-error-box::before {
+   position: absolute;
+   content: '';
+   inset: -20%;
+   background:
+      radial-gradient(
+         circle at 50% 100%,
+         hsla(0, 94%, 65%, 0.15) 0%,
+         transparent 60%
+      );
+   animation:
+      cosmic-pulse 8s cubic-bezier(0.4, 0, 0.2, 1) infinite,
+      gentle-drift 16s linear infinite;
+   opacity: .7;
+   filter: blur(8px);
+}
+
+@keyframes cosmic-pulse {
+   0%, 100% {
+      opacity: .4;
+      transform: scale(0.95);
+   }
+   50% {
+      opacity: .8;
+      transform: scale(1.05);
+   }
 }
 
 /* Section: checkboxes */

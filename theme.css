@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.16
+Lumines Obsidian Version: 2.0.0
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -355,19 +355,6 @@ ul {
 .view-header-breadcrumb,
 .view-header-breadcrumb-separator {
    display: none;
-}
-
-/* Section: highlight */
-.markdown-rendered mark,
-.cm-s-obsidian span.cm-highlight {
-   padding-inline: 5px;
-   border-radius: var(--border-radius-m);
-   background-color: color-mix(in srgb, var(--color-accent), transparent 40%);
-}
-
-.cm-s-obsidian span.cm-formatting-highlight {
-   padding: 0;
-   background-color: transparent;
 }
 
 /* Section: [key:: value] */
@@ -1929,59 +1916,6 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 
 .quote-white, .q-white {
    --blockquote-border-color: var(--color-palette-white);
-}
-
-/* Section: highlight */
-:is(.highlight-red, .h-red) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-red), transparent 40%);
-}
-
-:is(.highlight-orange, .h-orange) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-orange), transparent 40%);
-}
-
-:is(.highlight-yellow, .h-yellow) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-yellow), transparent 40%);
-}
-
-:is(.highlight-lime, .h-lime) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-lime), transparent 40%);
-}
-
-:is(.highlight-green, .h-green) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-green), transparent 40%);
-}
-
-:is(.highlight-cyan, .h-cyan) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-cyan), transparent 40%);
-}
-
-:is(.highlight-sky, .h-sky) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-sky), transparent 40%);
-}
-
-:is(.highlight-blue, .h-blue) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-blue), transparent 40%);
-}
-
-:is(.highlight-indigo, .h-indigo) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-indigo), transparent 40%);
-}
-
-:is(.highlight-violet, .h-violet) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-violet), transparent 40%);
-}
-
-:is(.highlight-pink, .h-pink) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-pink), transparent 40%);
-}
-
-:is(.highlight-gray, .h-gray) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-gray), transparent 40%);
-}
-
-:is(.highlight-white, .h-white) :is(.markdown-rendered mark, .cm-s-obsidian span.cm-highlight:not(.cm-s-obsidian span.cm-formatting-highlight)) {
-   background-color: color-mix(in srgb, var(--color-palette-white), transparent 40%);
 }
 
 /* Section: sidebar-indicator */

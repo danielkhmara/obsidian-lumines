@@ -236,24 +236,6 @@
         <li>quote-white</li>
       </ul>
     </details>
-    <details>
-      <summary>Highlight color</summary>
-      <ul>
-        <li>highlight-red</li>
-        <li>highlight-orange</li>
-        <li>highlight-yellow</li>
-        <li>highlight-lime</li>
-        <li>highlight-green</li>
-        <li>highlight-cyan</li>
-        <li>highlight-sky</li>
-        <li>highlight-blue</li>
-        <li>highlight-indigo</li>
-        <li>highlight-violet</li>
-        <li>highlight-pink</li>
-        <li>highlight-gray</li>
-        <li>highlight-white</li>
-      </ul>
-    </details>
   </div>
 </div>
 

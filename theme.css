@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.15
+Lumines Obsidian Version: 1.0.16
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -151,10 +151,6 @@ body {
    --border-radius-m: 8px;
    --border-radius-l: 16px;
 
-   /* Section: margin-values */
-   --margin-desktop: 14%;
-   --margin-mobile: 18%;
-
    /* Section: ui-parameters */
    --font-default: "JetBrains Mono", monospace;
 
@@ -162,15 +158,24 @@ body {
    --background-secondary: var(--color-base-05);
 
    --divider-color: var(--color-base-10);
-   --modal-radius: var(--border-radius-m);
    --icon-color-active: var(--color-base-80);
+   --table-header-background: var(--color-base-05);
+   --search-result-background: var(--color-base-05);
+
+   --modal-radius: var(--border-radius-m);
    --modal-border-color: var(--color-base-10);
+
    --titlebar-background: var(--color-base-05);
    --titlebar-background-focused: var(--color-base-05);
-   --table-header-background: var(--color-base-05);
+
+   --dropdown-background: var(--color-base-20);
+   --dropdown-background-hover: var(--color-base-20);
+
    --background-modifier-border: var(--color-base-10);
    --background-modifier-active-hover: var(--color-accent);
    --background-modifier-border-hover: var(--color-base-20);
+   --background-modifier-form-field: var(--color-base-05) !important;
+
    --interactive-hover: var(--color-base-25) !important;
    --interactive-normal: var(--color-base-20) !important;
 
@@ -191,6 +196,7 @@ body {
    --code-operator: var(--color-base-80);
    --code-background: var(--color-base-05);
    --code-punctuation: var(--color-base-60);
+
    --code-tag: rgb(224, 108, 117);
    --code-value: rgb(198, 120, 221);
    --code-string: rgb(229, 192, 123);
@@ -198,6 +204,39 @@ body {
    --code-property: rgb(86, 182, 194);
    --code-function: rgb(152, 195, 121);
    --code-important: rgb(198, 120, 221);
+
+   /* Section: metadata */
+   --background-modifier-border: transparent;
+   --background-modifier-border-hover: transparent;
+   --background-modifier-border-focus: transparent;
+   --background-modifier-active-hover: transparent;
+
+   --metadata-padding: 0;
+
+   --metadata-background: transparent;
+   --metadata-border-color: transparent;
+   --metadata-divider-color: transparent;
+   --metadata-divider-color-hover: transparent;
+   --metadata-divider-color-focus: transparent;
+   --metadata-property-background: transparent;
+   --metadata-property-background-hover: transparent;
+   --metadata-property-background-active: transparent;
+   --metadata-label-background: transparent;
+   --metadata-label-background-hover: transparent;
+   --metadata-label-background-active: transparent;
+   --metadata-input-background: transparent;
+   --metadata-input-background-hover: transparent;
+   --metadata-input-background-active: transparent;
+
+   --metadata-label-text-color-hover: var(--text-muted);
+   --metadata-label-text-color: var(--text-muted);
+   --metadata-input-text-color: var(--text-normal);
+
+   --metadata-property-radius: var(--border-radius-m);
+   --metadata-property-radius-hover: var(--border-radius-m);
+   --metadata-property-radius-focus: var(--border-radius-m);
+
+   --pill-color-remove: var(--color-base-35);
 
    /* Section: headings */
    --h1-color: var(--color-accent);
@@ -1138,7 +1177,6 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 
 /* Section: properties */
 .metadata-container {
-   padding-top: 0;
    margin-block-end: .35rem;
 }
 
@@ -1164,24 +1202,6 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    background-repeat: no-repeat;
    background-position: center;
    margin-left: var(--size-4-1);
-}
-
-.metadata-property:focus-within {
-   box-shadow: none;
-}
-
-.metadata-property-key:focus-within,
-.metadata-property-value:focus-within {
-   background-color: transparent;
-}
-
-.multi-select-pill,
-.multi-select-pill:hover {
-   border: 0;
-}
-
-.multi-select-pill:focus::after {
-   box-shadow: none;
 }
 
 /* Section: dark-properties-icons */
@@ -2030,8 +2050,6 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
       --tab-outline-color: transparent;
       --ribbon-background: var(--color-base-00);
       --status-bar-background: var(--color-base-05);
-      --titlebar-background: var(--color-base-05);
-      --titlebar-background-focused: var(--color-base-05);
    }
 
    .workspace-ribbon.side-dock-ribbon.mod-left {

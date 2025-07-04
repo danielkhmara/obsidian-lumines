@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.14
+Lumines Obsidian Version: 1.0.15
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -182,6 +182,10 @@ body {
    --nav-item-color-hover: var(--color-base-70);
    --nav-item-color-active: var(--color-base-70);
 
+   --code-border-width: 1px;
+   --code-border-color: var(--color-base-10);
+   --code-radius: var(--border-radius-m);
+
    --code-normal: var(--color-base-80);
    --code-comment: var(--color-base-35);
    --code-operator: var(--color-base-80);
@@ -325,21 +329,6 @@ ul {
 .cm-s-obsidian span.cm-formatting-highlight {
    padding: 0;
    background-color: transparent;
-}
-
-/* Section: codeblock */
-.HyperMD-codeblock-begin {
-   border-top: 1px solid var(--color-base-10) !important;
-   border-radius: var(--border-radius-m) var(--border-radius-m) 0 0 !important;
-}
-
-.HyperMD-codeblock.HyperMD-codeblock-bg {
-   border-inline: 1px solid var(--color-base-10) !important;
-}
-
-.HyperMD-codeblock-end {
-   border-bottom: 1px solid var(--color-base-10) !important;
-   border-radius: 0 0 var(--border-radius-m) var(--border-radius-m) !important;
 }
 
 /* Section: [key:: value] */

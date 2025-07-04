@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.13
+Lumines Obsidian Version: 1.0.14
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -2390,6 +2390,10 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    order: 5;
 }
 
+.nth-child-1-6 .mobile-navbar-action:nth-child(1) {
+   order: 6;
+}
+
 /* Section: mobile-navbar-nth-child-2 */
 .nth-child-2-1 .mobile-navbar-action:nth-child(2) {
    order: 1;
@@ -2409,6 +2413,10 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 
 .nth-child-2-5 .mobile-navbar-action:nth-child(2) {
    order: 5;
+}
+
+.nth-child-2-6 .mobile-navbar-action:nth-child(2) {
+   order: 6;
 }
 
 /* Section: mobile-navbar-nth-child-3 */
@@ -2432,6 +2440,10 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    order: 5;
 }
 
+.nth-child-3-6 .mobile-navbar-action:nth-child(3) {
+   order: 6;
+}
+
 /* Section: mobile-navbar-nth-child-4 */
 .nth-child-4-1 .mobile-navbar-action:nth-child(4) {
    order: 1;
@@ -2453,6 +2465,10 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    order: 5;
 }
 
+.nth-child-4-6 .mobile-navbar-action:nth-child(4) {
+   order: 6;
+}
+
 /* Section: mobile-navbar-nth-child-5 */
 .nth-child-5-1 .mobile-navbar-action:nth-child(5) {
    order: 1;
@@ -2472,6 +2488,35 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 
 .nth-child-5-5 .mobile-navbar-action:nth-child(5) {
    order: 5;
+}
+
+.nth-child-5-6 .mobile-navbar-action:nth-child(5) {
+   order: 6;
+}
+
+/* Section: mobile-navbar-nth-child-6 */
+.nth-child-6-1 .mobile-navbar-action:nth-child(6) {
+   order: 1;
+}
+
+.nth-child-6-2 .mobile-navbar-action:nth-child(6) {
+   order: 2;
+}
+
+.nth-child-6-3 .mobile-navbar-action:nth-child(6) {
+   order: 3;
+}
+
+.nth-child-6-4 .mobile-navbar-action:nth-child(6) {
+   order: 4;
+}
+
+.nth-child-6-5 .mobile-navbar-action:nth-child(6) {
+   order: 5;
+}
+
+.nth-child-6-6 .mobile-navbar-action:nth-child(6) {
+   order: 6;
 }
 
 /*@settings
@@ -2709,6 +2754,9 @@ settings:
       -
          label: 5
          value: nth-child-1-5
+      -
+         label: 6
+         value: nth-child-1-6
    -
       id: mobile-navbar-nth-child-2
       title: Navigate forward button
@@ -2734,10 +2782,13 @@ settings:
       -
          label: 5
          value: nth-child-2-5
+      -
+         label: 6
+         value: nth-child-2-6
    -
       id: mobile-navbar-nth-child-3
-      title: Find or create button
-      title.ru: Кнопка «Найти или создать»
+      title: Quick switcher button
+      title.ru: Кнопка «Быстрый переход»
       description: Choose the position for the 3rd button.
       description.ru: Выберите позицию для 3-ей кнопки.
       type: class-select
@@ -2759,10 +2810,13 @@ settings:
       -
          label: 5
          value: nth-child-3-5
+      -
+         label: 6
+         value: nth-child-3-6
    -
       id: mobile-navbar-nth-child-4
-      title: Open tabs button
-      title.ru: Кнопка «Открыть вкладки»
+      title: New tab button
+      title.ru: Кнопка «Новая вкладка»
       description: Choose the position for the 4th button.
       description.ru: Выберите позицию для 4-ой кнопки.
       type: class-select
@@ -2784,10 +2838,13 @@ settings:
       -
          label: 5
          value: nth-child-4-5
+      -
+         label: 6
+         value: nth-child-4-6
    -
       id: mobile-navbar-nth-child-5
-      title: Ribbon menu button
-      title.ru: Кнопка «Ленточное меню»
+      title: Open tabs button
+      title.ru: Кнопка «Открыть вкладки»
       description: Choose the position for the 5th button.
       description.ru: Выберите позицию для 5-ой кнопки.
       type: class-select
@@ -2809,4 +2866,35 @@ settings:
       -
          label: 5
          value: nth-child-5-5
+      -
+         label: 6
+         value: nth-child-5-6
+   -
+      id: mobile-navbar-nth-child-6
+      title: Ribbon menu button
+      title.ru: Кнопка «Ленточное меню»
+      description: Choose the position for the 6th button.
+      description.ru: Выберите позицию для 6-ой кнопки.
+      type: class-select
+      allowEmpty: false
+      default: nth-child-6-6
+      options:
+      -
+         label: 1
+         value: nth-child-6-1
+      -
+         label: 2
+         value: nth-child-6-2
+      -
+         label: 3
+         value: nth-child-6-3
+      -
+         label: 4
+         value: nth-child-6-4
+      -
+         label: 5
+         value: nth-child-6-5
+      -
+         label: 6
+         value: nth-child-6-6
 */

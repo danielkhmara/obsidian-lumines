@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.0.12
+Lumines Obsidian Version: 1.0.13
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -2302,8 +2302,8 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    padding-top: var(--header-padding-top);
 }
 
-/* Section: help-button */
-.help-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
+/* Section: guide-button */
+.guide-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
    display: none;
 }
 
@@ -2344,18 +2344,18 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    display: none;
 }
 
+/* Section: more-context-button */
+.more-context-button .nav-header .clickable-icon:has(.svg-icon.lucide-move-vertical) {
+   display: none;
+}
+
 /* Section: collapse-results-button */
 .collapse-results-button .nav-header .clickable-icon:has(.svg-icon.lucide-list) {
    display: none;
 }
 
-/* Section: show-more-context-button */
-.show-more-context-button .nav-header .clickable-icon:has(.svg-icon.lucide-move-vertical) {
-   display: none;
-}
-
-/* Section: show-search-filter-button */
-.show-search-filter-button .nav-header .clickable-icon:has(.svg-icon.lucide-search) {
+/* Section: search-filter-button */
+.search-filter-button .nav-header .clickable-icon:has(.svg-icon.lucide-search) {
    display: none;
 }
 
@@ -2475,15 +2475,21 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 }
 
 /*@settings
-name: Lumines Theme
+name: Lumines Theme Settings
 id: lumines-theme
 settings:
    -
+      title: Main UI settings
+      title.ru: Важные UI настройки
+      type: heading
+      level: 1
+      collapsed: true
+   -
       id: obsidian-font
-      title: Font for your vault
-      title.ru: Шрифт для хранилища
-      description: Find a font that works for you!
-      description.ru: Подберите шрифт под свой стиль!
+      title: Choose font in the vault
+      title.ru: Текущий шрифт в хранилище
+      description: Choose the font used in Obsidian.
+      description.ru: Подберите Обсидиану нужный шрифт.
       type: class-select
       allowEmpty: false
       default: font-jetbrains-mono
@@ -2499,9 +2505,9 @@ settings:
          value: font-cascadia-code
    -
       id: folder-titles-color
-      title: Folder titles color
-      title.ru: Цвет названий папок
-      description: Choose a color for folder titles.
+      title: Folder colors in sidebar
+      title.ru: Цвет папок в боковом меню
+      description: Select a color for folder titles.
       description.ru: Выберите цвет для названий папок.
       type: class-select
       allowEmpty: false
@@ -2551,25 +2557,45 @@ settings:
          value: folder-titles-white
    -
       id: header-padding-top
-      title: Header padding top
-      title.ru: Отступ заголовков сверху
-      description: Enter padding top in em units.
-      description.ru: Отступ указывается только в em.
+      title: Header top spacing value
+      title.ru: Верхний отступ заголовков
+      description: Enter the value only in em units.
+      description.ru: Задавайте значение в em единицах.
       type: variable-number
       default: .7
       format: em
    -
-      title: Disable all buttons
-      title.ru: Отключение всех кнопок
+      title: Hide UI elements
+      title.ru: Видимость элементов
       type: heading
       level: 1
       collapsed: true
    -
-      id: help-button
-      title: Help button
-      title.ru: Кнопка «Помощь»
-      description: Hide the help button.
-      description.ru: Скрыть кнопку «Помощь».
+      title: Hide any icons
+      title.ru: Скрыть любые иконки
+      type: heading
+      level: 2
+      collapsed: true
+   -
+      id: lucide-mobile-chevrons
+      title: Mobile chevrons icon
+      title.ru: Иконка «Мобильные стрелки»
+      description: Hide the mobile chevrons icon.
+      description.ru: Скрыть иконку «Мобильные стрелки».
+      type: class-toggle
+      default: false
+   -
+      title: Hide any buttons
+      title.ru: Скрыть любые кнопки
+      type: heading
+      level: 2
+      collapsed: true
+   -
+      id: guide-button
+      title: Guide / help button
+      title.ru: Кнопка «Справочник»
+      description: Hide the guide / help button.
+      description.ru: Скрыть кнопку «Справочник».
       type: class-toggle
       default: false
    -
@@ -2629,6 +2655,14 @@ settings:
       type: class-toggle
       default: false
    -
+      id: more-context-button
+      title: More context button
+      title.ru: Кнопка «Больше контекста»
+      description: Hide the more context button.
+      description.ru: Скрыть кнопку «Больше контекста».
+      type: class-toggle
+      default: false
+   -
       id: collapse-results-button
       title: Collapse results button
       title.ru: Кнопка «Скрыть результаты»
@@ -2637,32 +2671,16 @@ settings:
       type: class-toggle
       default: false
    -
-      id: show-more-context-button
-      title: Show more context button
-      title.ru: Кнопка «Больше контекста»
-      description: Hide the show more context button.
-      description.ru: Скрыть кнопку «Больше контекста».
+      id: search-filter-button
+      title: Search filter button
+      title.ru: Кнопка «Фильтр поиска»
+      description: Hide the search filter button.
+      description.ru: Скрыть кнопку «Фильтр поиска».
       type: class-toggle
       default: false
    -
-      id: show-search-filter-button
-      title: Show search filter button
-      title.ru: Кнопка «Показать фильтр»
-      description: Hide the show search filter button.
-      description.ru: Скрыть кнопку «Показать фильтр».
-      type: class-toggle
-      default: false
-   -
-      id: lucide-mobile-chevrons
-      title: Show mobile chevrons icon
-      title.ru: Иконка «Мобильные стрелки»
-      description: Hide the mobile chevrons icon.
-      description.ru: Скрыть иконку «Мобильные стрелки».
-      type: class-toggle
-      default: false
-   -
-      title: Mobile navbar order
-      title.ru: Порядок меню навигации
+      title: Navbar in mobile
+      title.ru: Моб. меню навигации
       type: heading
       level: 1
       collapsed: true
@@ -2670,8 +2688,8 @@ settings:
       id: mobile-navbar-nth-child-1
       title: Navigate back button
       title.ru: Кнопка «Вернуться назад»
-      description: Where will the button be located?
-      description.ru: На каком месте будет по списку?
+      description: Choose the position for the 1st button.
+      description.ru: Выберите позицию для 1-ой кнопки.
       type: class-select
       allowEmpty: false
       default: nth-child-1-1
@@ -2695,8 +2713,8 @@ settings:
       id: mobile-navbar-nth-child-2
       title: Navigate forward button
       title.ru: Кнопка «Вернуться вперед»
-      description: Where will the button be located?
-      description.ru: На каком месте будет по списку?
+      description: Choose the position for the 2nd button.
+      description.ru: Выберите позицию для 2-ой кнопки.
       type: class-select
       allowEmpty: false
       default: nth-child-2-2
@@ -2718,10 +2736,10 @@ settings:
          value: nth-child-2-5
    -
       id: mobile-navbar-nth-child-3
-      title: Find or Create button
+      title: Find or create button
       title.ru: Кнопка «Найти или создать»
-      description: Where will the button be located?
-      description.ru: На каком месте будет по списку?
+      description: Choose the position for the 3rd button.
+      description.ru: Выберите позицию для 3-ей кнопки.
       type: class-select
       allowEmpty: false
       default: nth-child-3-3
@@ -2745,8 +2763,8 @@ settings:
       id: mobile-navbar-nth-child-4
       title: Open tabs button
       title.ru: Кнопка «Открыть вкладки»
-      description: Where will the button be located?
-      description.ru: На каком месте будет по списку?
+      description: Choose the position for the 4th button.
+      description.ru: Выберите позицию для 4-ой кнопки.
       type: class-select
       allowEmpty: false
       default: nth-child-4-4
@@ -2770,8 +2788,8 @@ settings:
       id: mobile-navbar-nth-child-5
       title: Ribbon menu button
       title.ru: Кнопка «Ленточное меню»
-      description: Where will the button be located?
-      description.ru: На каком месте будет по списку?
+      description: Choose the position for the 5th button.
+      description.ru: Выберите позицию для 5-ой кнопки.
       type: class-select
       allowEmpty: false
       default: nth-child-5-5

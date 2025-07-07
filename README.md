@@ -249,11 +249,81 @@
     <details>
       <summary>New callouts</summary>
       <ul>
-        <li>>[!like] Callout</li>
-        <li>>[!dislike] Callout</li>
+        <li>>[!accessible] Callout</li>
+        <li>>[!ad] Callout</li>
+        <li>>[!archive] Callout</li>
+        <li>>[!award] Callout</li>
+        <li>>[!balloon] Callout</li>
+        <li>>[!barrier] Callout</li>
+        <li>>[!bell] Callout</li>
+        <li>>[!bitcoin] Callout</li>
+        <li>>[!book] Callout</li>
+        <li>>[!bookmark] Callout</li>
+        <li>>[!briefcase] Callout</li>
+        <li>>[!butterfly] Callout</li>
+        <li>>[!calendar] Callout</li>
+        <li>>[!camera] Callout</li>
+        <li>>[!cannabis] Callout</li>
+        <li>>[!card] Callout</li>
         <li>>[!star] Callout</li>
+        <li>>[!chart] Callout</li>
+        <li>>[!cherry] Callout</li>
+        <li>>[!clock] Callout</li>
+        <li>>[!cloud] Callout</li>
+        <li>>[!confetti] Callout</li>
+        <li>>[!diamond] Callout</li>
+        <li>>[!discord] Callout</li>
+        <li>>[!dislike] Callout</li>
+        <li>>[!discount] Callout</li>
+        <li>>[!dollar] Callout</li>
+        <li>>[!down] Callout</li>
+        <li>>[!euro] Callout</li>
+        <li>>[!file] Callout</li>
+        <li>>[!filter] Callout</li>
+        <li>>[!flag] Callout</li>
+        <li>>[!flare] Callout</li>
+        <li>>[!folder] Callout</li>
+        <li>>[!gift] Callout</li>
+        <li>>[!github] Callout</li>
+        <li>>[!headphones] Callout</li>
+        <li>>[!heart] Callout</li>
+        <li>>[!imac] Callout</li>
         <li>>[!image] Callout</li>
-        <li>>[!sort] Callout</li>
+        <li>>[!ipad] Callout</li>
+        <li>>[!iphone] Callout</li>
+        <li>>[!wreath] Callout</li>
+        <li>>[!like] Callout</li>
+        <li>>[!linkedin] Callout</li>
+        <li>>[!location] Callout</li>
+        <li>>[!mail] Callout</li>
+        <li>>[!message] Callout</li>
+        <li>>[!microphone] Callout</li>
+        <li>>[!palette] Callout</li>
+        <li>>[!pig] Callout</li>
+        <li>>[!pin] Callout</li>
+        <li>>[!pound] Callout</li>
+        <li>>[!puzzle] Callout</li>
+        <li>>[!rupee] Callout</li>
+        <li>>[!seedling] Callout</li>
+        <li>>[!settings] Callout</li>
+        <li>>[!shield] Callout</li>
+        <li>>[!spotify] Callout</li>
+        <li>>[!steam] Callout</li>
+        <li>>[!sunrise] Callout</li>
+        <li>>[!sunset] Callout</li>
+        <li>>[!taka] Callout</li>
+        <li>>[!tiktok] Callout</li>
+        <li>>[!trophy] Callout</li>
+        <li>>[!truck] Callout</li>
+        <li>>[!unknown] Callout</li>
+        <li>>[!usb] Callout</li>
+        <li>>[!up] Callout</li>
+        <li>>[!whatsapp] Callout</li>
+        <li>>[!windmill] Callout</li>
+        <li>>[!x] Callout</li>
+        <li>>[!yen] Callout</li>
+        <li>>[!youtube] Callout</li>
+        <li>>[!yuan] Callout</li>
       </ul>
     </details>
 </div>

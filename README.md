@@ -249,11 +249,81 @@
     <details>
       <summary>New callouts</summary>
       <ul>
-        <li>>[!like] Callout</li>
-        <li>>[!dislike] Callout</li>
-        <li>>[!star] Callout</li>
-        <li>>[!image] Callout</li>
-        <li>>[!sort] Callout</li>
+        <li>> [!accessible] Title</li>
+        <li>> [!ad] Title</li>
+        <li>> [!archive] Title</li>
+        <li>> [!award] Title</li>
+        <li>> [!balloon] Title</li>
+        <li>> [!barrier] Title</li>
+        <li>> [!bell] Title</li>
+        <li>> [!bitcoin] Title</li>
+        <li>> [!book] Title</li>
+        <li>> [!bookmark] Title</li>
+        <li>> [!briefcase] Title</li>
+        <li>> [!butterfly] Title</li>
+        <li>> [!calendar] Title</li>
+        <li>> [!camera] Title</li>
+        <li>> [!cannabis] Title</li>
+        <li>> [!card] Title</li>
+        <li>> [!chart] Title</li>
+        <li>> [!cherry] Title</li>
+        <li>> [!clock] Title</li>
+        <li>> [!cloud] Title</li>
+        <li>> [!code] Title</li>
+        <li>> [!confetti] Title</li>
+        <li>> [!diamond] Title</li>
+        <li>> [!discord] Title</li>
+        <li>> [!dislike] Title</li>
+        <li>> [!dollar] Title</li>
+        <li>> [!down] Title</li>
+        <li>> [!euro] Title</li>
+        <li>> [!file] Title</li>
+        <li>> [!filter] Title</li>
+        <li>> [!flag] Title</li>
+        <li>> [!flare] Title</li>
+        <li>> [!folder] Title</li>
+        <li>> [!gift] Title</li>
+        <li>> [!github] Title</li>
+        <li>> [!hashtag] Title</li>
+        <li>> [!headphones] Title</li>
+        <li>> [!heart] Title</li>
+        <li>> [!imac] Title</li>
+        <li>> [!image] Title</li>
+        <li>> [!ipad] Title</li>
+        <li>> [!iphone] Title</li>
+        <li>> [!like] Title</li>
+        <li>> [!linkedin] Title</li>
+        <li>> [!location] Title</li>
+        <li>> [!mail] Title</li>
+        <li>> [!message] Title</li>
+        <li>> [!microphone] Title</li>
+        <li>> [!palette] Title</li>
+        <li>> [!pig] Title</li>
+        <li>> [!pound] Title</li>
+        <li>> [!puzzle] Title</li>
+        <li>> [!rupee] Title</li>
+        <li>> [!seedling] Title</li>
+        <li>> [!settings] Title</li>
+        <li>> [!shield] Title</li>
+        <li>> [!spotify] Title</li>
+        <li>> [!star] Title</li>
+        <li>> [!steam] Title</li>
+        <li>> [!sunrise] Title</li>
+        <li>> [!sunset] Title</li>
+        <li>> [!taka] Title</li>
+        <li>> [!tiktok] Title</li>
+        <li>> [!trophy] Title</li>
+        <li>> [!truck] Title</li>
+        <li>> [!unknown] Title</li>
+        <li>> [!up] Title</li>
+        <li>> [!usb] Title</li>
+        <li>> [!whatsapp] Title</li>
+        <li>> [!windmill] Title</li>
+        <li>> [!wreath] Title</li>
+        <li>> [!x] Title</li>
+        <li>> [!yen] Title</li>
+        <li>> [!youtube] Title</li>
+        <li>> [!yuan] Title</li>
       </ul>
     </details>
 </div>

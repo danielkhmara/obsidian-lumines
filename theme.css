@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 2.0.3
+Lumines Obsidian Version: 2.0.4
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -2829,59 +2829,59 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 /* Section: folder-titles */
 .nav-folder .nav-folder-title,
 .folder-titles-accent .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--color-accent), var(--primary-white) 10%);
+   color: var(--color-accent);
 }
 
 .folder-titles-red .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-red), var(--primary-white) 10%);
+   color: hsl(var(--primary-red));
 }
 
 .folder-titles-orange .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-orange), var(--primary-white) 10%);
+   color: hsl(var(--primary-orange));
 }
 
 .folder-titles-yellow .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-yellow), var(--primary-white) 10%);
+   color: hsl(var(--primary-yellow));
 }
 
 .folder-titles-lime .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-lime), var(--primary-white) 10%);
+   color: hsl(var(--primary-lime));
 }
 
 .folder-titles-green .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-green), var(--primary-white) 10%);
+   color: hsl(var(--primary-green));
 }
 
 .folder-titles-cyan .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-cyan), var(--primary-white) 10%);
+   color: hsl(var(--primary-cyan));
 }
 
 .folder-titles-sky .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-sky), var(--primary-white) 10%);
+   color: hsl(var(--primary-sky));
 }
 
 .folder-titles-blue .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-blue), var(--primary-white) 10%);
+   color: hsl(var(--primary-blue));
 }
 
 .folder-titles-indigo .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-indigo), var(--primary-white) 10%);
+   color: hsl(var(--primary-indigo));
 }
 
 .folder-titles-violet .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-violet), var(--primary-white) 10%);
+   color: hsl(var(--primary-violet));
 }
 
 .folder-titles-pink .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-pink), var(--primary-white) 10%);
+   color: hsl(var(--primary-pink));
 }
 
 .folder-titles-gray .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-gray), var(--primary-white) 10%);
+   color: hsl(var(--primary-gray));
 }
 
-.folder-titles-white .nav-folder .nav-folder-title {
-   color: color-mix(in srgb, var(--primary-white), var(--primary-white) 10%);
+.folder-titles-none .nav-folder .nav-folder-title {
+   color: var(--nav-item-color-active);
 }
 
 /* Section: header-padding-top */
@@ -3185,8 +3185,8 @@ settings:
          label: Gray
          value: folder-titles-gray
       -
-         label: White
-         value: folder-titles-white
+         label: None
+         value: folder-titles-none
    -
       id: header-padding-top
       title: Header top spacing value

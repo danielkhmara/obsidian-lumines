@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.5
+Lumines Obsidian Version: 1.1.0-alpha.6
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -1720,7 +1720,7 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
    --metadata-icon-mask: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMS43NSIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1jdXJyZW5jeS1wb3VuZCI+PHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE3IDE4LjVhNiA2IDAgMCAxIC01IDBhNiA2IDAgMCAwIC01IC41YTMgMyAwIDAgMCAyIC0yLjV2LTcuNWE0IDQgMCAwIDEgNy40NSAtMm0tMi41NSA2aC03IiAvPjwvc3ZnPg==);
 }
 
-.metadata-property[data-property-key="rubel"] {
+.metadata-property[data-property-key="ruble"] {
    --metadata-icon-mask: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMS43NSIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1jdXJyZW5jeS1ydWJlbCI+PHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTggMTl2LTE0aDZhMyAzIDAgMCAxIDAgNmgtOCIgLz48cGF0aCBkPSJNMTQgMTVoLTgiIC8+PC9zdmc+);
 }
 
@@ -2826,10 +2826,6 @@ li.is-checked[data-task="q"] input[type=checkbox]:checked {
 
 .metadata-property[data-property-key="camera"] {
    --metadata-icon-mask: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMS43NSIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1jYW1lcmEiPjxwYXRoIHN0cm9rZT0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik01IDdoMWEyIDIgMCAwIDAgMiAtMmExIDEgMCAwIDEgMSAtMWg2YTEgMSAwIDAgMSAxIDFhMiAyIDAgMCAwIDIgMmgxYTIgMiAwIDAgMSAyIDJ2OWEyIDIgMCAwIDEgLTIgMmgtMTRhMiAyIDAgMCAxIC0yIC0ydi05YTIgMiAwIDAgMSAyIC0yIiAvPjxwYXRoIGQ9Ik05IDEzYTMgMyAwIDEgMCA2IDBhMyAzIDAgMCAwIC02IDAiIC8+PC9zdmc+);
-}
-
-.metadata-property[data-property-key="cast"] {
-   --metadata-icon-mask: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMS43NSIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1jYXN0Ij48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMyAxOWwuMDEgMCIgLz48cGF0aCBkPSJNNyAxOWE0IDQgMCAwIDAgLTQgLTQiIC8+PHBhdGggZD0iTTExIDE5YTggOCAwIDAgMCAtOCAtOCIgLz48cGF0aCBkPSJNMTUgMTloM2EzIDMgMCAwIDAgMyAtM3YtOGEzIDMgMCAwIDAgLTMgLTNoLTEyYTMgMyAwIDAgMCAtMi44IDIiIC8+PC9zdmc+);
 }
 
 .metadata-property[data-property-key="cctv"] {

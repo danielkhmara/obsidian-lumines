@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.12
+Lumines Obsidian Version: 1.1.0-alpha.13
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -349,6 +349,9 @@ body {
    --graph-node-attachment: hsl(var(--primary-yellow));
    --graph-node-focused: var(--background-modifier-border-focus);
    --graph-line: var(--color-base-20, var(--background-modifier-border-focus));
+
+   /* Section: bases */
+   --bases-embed-border-radius: var(--radius-m);
 }
 
 /* Section: images */

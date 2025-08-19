@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.13
+Lumines Obsidian Version: 1.1.0-alpha.14
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -332,6 +332,9 @@ body {
    --tab-text-color-focused-active: var(--color-base-60);
    --tab-text-color-focused-active-current: var(--color-base-80);
 
+   /* Section: fonts */
+   --font-weight-table-titles: 700;
+
    /* Section: links */
    --link-decoration: none;
    --link-decoration-hover: none;
@@ -351,7 +354,30 @@ body {
    --graph-line: var(--color-base-20, var(--background-modifier-border-focus));
 
    /* Section: bases */
+   --bases-embed-border-color: var(--color-base-10);
    --bases-embed-border-radius: var(--radius-m);
+   --bases-table-container-border-width: 1px;
+   --bases-table-container-border-radius: var(--radius-m);
+   --bases-table-header-weight: var(--font-weight);
+   --bases-table-header-color: var(--text-muted);
+   --bases-table-header-icon-display: none;
+   --bases-table-header-background: var(--background-primary);
+   --bases-table-header-background-hover: none;
+   --bases-table-border-color: var(--bases-embed-border-color);
+   --bases-table-row-background-hover: var(--table-row-background-hover);
+   --bases-table-text-size: var(--font-smaller);
+   --bases-table-cell-radius-active: 2px;
+   --bases-table-cell-shadow-active: 0 0 0 2px var(--interactive-accent);
+   --bases-table-cell-background-active: var(--background-primary);
+   --bases-table-cell-background-disabled: transparent;
+   --bases-cards-container-background: transparent;
+   --bases-cards-background: var(--background-secondary);
+   --bases-cards-cover-background: var(--background-primary-alt);
+   --bases-cards-line-height: 24px;
+   --bases-cards-border-width: 1px;
+   --bases-cards-shadow: 0 0 0 1px var(--bases-embed-border-color);
+   --bases-cards-shadow-hover: 0 0 0 1px var(--color-accent);
+   --bases-cards-text-size: var(--font-smaller);
 }
 
 /* Section: images */
@@ -390,6 +416,24 @@ img {
 /* Section: ul-li */
 ul {
    list-style-type: circle;
+}
+
+/* Section: bases */
+.bases-header .text-button-icon {
+   display: none;
+}
+
+.bases-table-header-name {
+   font-weight: var(--font-weight-table-titles);
+}
+
+.bases-tbody .bases-tr:nth-child(2n + 1),
+.bases-tbody .bases-tr:hover:nth-child(2n + 1) {
+   background-color: var(--background-secondary);
+}
+
+.bases-view {
+   scrollbar-gutter: auto;
 }
 
 /* Section: sidebar */

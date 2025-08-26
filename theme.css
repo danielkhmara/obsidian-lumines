@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.18
+Lumines Obsidian Version: 1.1.0-alpha.19
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -481,7 +481,7 @@ body:not(.is-mobile) .workspace-leaf.mod-active .tree-item-self.has-focus {
    display: none;
 }
 
-/* Section: plugin-dataview */
+/* Section: dataview */
 a.tag {
    display: block;
    width: auto;
@@ -3616,13 +3616,13 @@ input[type="checkbox"]:checked::after {
    }
 
    /* Section: sidebar-icons */
-   /* Section: plugin-search */
+   /* Section: search */
    .workspace-drawer-active-tab-chevron,
    .search-empty-state {
       display: none;
    }
 
-   /* Section: plugin-calendar */
+   /* Section: calendar */
    .title.svelte-1vwr9dd {
       padding-left: 5px;
    }
@@ -3636,21 +3636,21 @@ input[type="checkbox"]:checked::after {
    }
 }
 
-/* Section: plugin-style-settings */
-/* Section: obsidian-font */
-.font-jetbrains-mono {
+/* Section: style-settings */
+/* Section: obsidian-fonts */
+.obsidian-font-jetbrains-mono {
    --font-default: "JetBrains Mono", monospace;
 }
 
-.font-excalifont {
+.obsidian-font-excalifont {
    --font-default: "Excalifont", sans-serif;
 }
 
-.font-cascadia-code {
+.obsidian-font-cascadia-code {
    --font-default: "Cascadia Code", monospace;
 }
 
-/* Section: folder-titles */
+/* Section: folder-titles-color */
 .nav-folder .nav-folder-title,
 .folder-titles-accent .nav-folder .nav-folder-title {
    color: var(--color-accent);
@@ -3708,604 +3708,646 @@ input[type="checkbox"]:checked::after {
    color: var(--nav-item-color-active);
 }
 
-/* Section: header-padding-top */
+/* Section: headers-padding-top */
 .cm-s-obsidian .cm-line.HyperMD-header {
    padding-top: var(--header-padding-top);
 }
 
-/* Section: guide-button */
-.guide-button .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
+/* Section: hide-icon-or-button */
+.hide-button-new-note .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
    display: none;
 }
 
-/* Section: new-note-button */
-.new-note-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-edit) {
+.hide-button-new-folder .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
    display: none;
 }
 
-/* Section: new-folder-button */
-.new-folder-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-folder-plus) {
+.hide-button-sort-order .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
    display: none;
 }
 
-/* Section: sort-order-button */
-.sort-order-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-sort-asc) {
+.hide-button-auto-reveal .clickable-icon.nav-action-button:has(.svg-icon.lucide-gallery-vertical) {
    display: none;
 }
 
-/* Section: auto-reveal-button */
-.auto-reveal-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-gallery-vertical) {
+.hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down),
+.hide-button-collapse-all .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
    display: none;
 }
 
-/* Section: expand-all-button */
-.expand-all-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-up-down),
-.expand-all-button .nav-buttons-container .clickable-icon.nav-action-button:has(.svg-icon.lucide-chevrons-down-up) {
+.hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-book-open),
+.hide-button-reading-mode .view-header .clickable-icon.view-action:has(.svg-icon.lucide-edit-3) {
    display: none;
 }
 
-/* Section: reading-mode-button */
-.reading-mode-button .view-actions .view-action:has(.svg-icon.lucide-edit-3),
-.reading-mode-button .view-actions .view-action:has(.svg-icon.lucide-book-open) {
+.hide-button-search-settings .search-row .clickable-icon:has(.svg-icon.lucide-sliders-horizontal) {
    display: none;
 }
 
-/* Section: search-settings-button */
-.search-settings-button .search-row .clickable-icon:has(.svg-icon.lucide-sliders-horizontal) {
+.hide-button-help .workspace-drawer-vault-actions .clickable-icon:has(.svg-icon.help) {
    display: none;
 }
 
-/* Section: more-context-button */
-.more-context-button .nav-header .clickable-icon:has(.svg-icon.lucide-move-vertical) {
+.hide-button-mobile-navbar-action-back .mobile-navbar-action.mobile-navbar-action-back {
    display: none;
 }
 
-/* Section: collapse-results-button */
-.collapse-results-button .nav-header .clickable-icon:has(.svg-icon.lucide-list) {
+.hide-button-mobile-navbar-action-forward .mobile-navbar-action.mobile-navbar-action-forward {
    display: none;
 }
 
-/* Section: search-filter-button */
-.search-filter-button .nav-header .clickable-icon:has(.svg-icon.lucide-search) {
+.hide-button-mobile-navbar-action-quick-switcher .mobile-navbar-action.mobile-navbar-action-quick-switcher {
    display: none;
 }
 
-/* Section: lucide-mobile-chevrons */
-.lucide-mobile-chevrons .mobile-navbar .navbar-action-flair:has(.svg-icon.lucide-chevrons-up-down) {
+.hide-button-mobile-navbar-action-new-tab .mobile-navbar-action.mobile-navbar-action-new-tab {
    display: none;
 }
 
-/* Section: mobile-navbar */
-.mobile-navbar-actions {
-   display: flex;
+.hide-button-mobile-navbar-action-tabs .mobile-navbar-action.mobile-navbar-action-tabs {
+   display: none;
 }
 
-/* Section: mobile-navbar-nth-child-1 */
-.nth-child-1-1 .mobile-navbar-action:nth-child(1) {
+.hide-button-mobile-navbar-action-menu .mobile-navbar-action.mobile-navbar-action-menu {
+   display: none;
+}
+
+.hide-icon-mobile-chevrons .mobile-navbar .navbar-action-flair:has(.svg-icon.lucide-chevrons-up-down) {
+   display: none;
+}
+
+/* Section: order-navbar-buttons */
+/* Section: order-navbar-button-nth-child-1 */
+.order-navbar-button-nth-child-1-1 .mobile-navbar-action:nth-child(1) {
    order: 1;
 }
 
-.nth-child-1-2 .mobile-navbar-action:nth-child(1) {
+.order-navbar-button-nth-child-1-2 .mobile-navbar-action:nth-child(1) {
    order: 2;
 }
 
-.nth-child-1-3 .mobile-navbar-action:nth-child(1) {
+.order-navbar-button-nth-child-1-3 .mobile-navbar-action:nth-child(1) {
    order: 3;
 }
 
-.nth-child-1-4 .mobile-navbar-action:nth-child(1) {
+.order-navbar-button-nth-child-1-4 .mobile-navbar-action:nth-child(1) {
    order: 4;
 }
 
-.nth-child-1-5 .mobile-navbar-action:nth-child(1) {
+.order-navbar-button-nth-child-1-5 .mobile-navbar-action:nth-child(1) {
    order: 5;
 }
 
-.nth-child-1-6 .mobile-navbar-action:nth-child(1) {
+.order-navbar-button-nth-child-1-6 .mobile-navbar-action:nth-child(1) {
    order: 6;
 }
 
-/* Section: mobile-navbar-nth-child-2 */
-.nth-child-2-1 .mobile-navbar-action:nth-child(2) {
+/* Section: order-navbar-button-nth-child-2 */
+.order-navbar-button-nth-child-2-1 .mobile-navbar-action:nth-child(2) {
    order: 1;
 }
 
-.nth-child-2-2 .mobile-navbar-action:nth-child(2) {
+.order-navbar-button-nth-child-2-2 .mobile-navbar-action:nth-child(2) {
    order: 2;
 }
 
-.nth-child-2-3 .mobile-navbar-action:nth-child(2) {
+.order-navbar-button-nth-child-2-3 .mobile-navbar-action:nth-child(2) {
    order: 3;
 }
 
-.nth-child-2-4 .mobile-navbar-action:nth-child(2) {
+.order-navbar-button-nth-child-2-4 .mobile-navbar-action:nth-child(2) {
    order: 4;
 }
 
-.nth-child-2-5 .mobile-navbar-action:nth-child(2) {
+.order-navbar-button-nth-child-2-5 .mobile-navbar-action:nth-child(2) {
    order: 5;
 }
 
-.nth-child-2-6 .mobile-navbar-action:nth-child(2) {
+.order-navbar-button-nth-child-2-6 .mobile-navbar-action:nth-child(2) {
    order: 6;
 }
 
-/* Section: mobile-navbar-nth-child-3 */
-.nth-child-3-1 .mobile-navbar-action:nth-child(3) {
+/* Section: order-navbar-button-nth-child-3 */
+.order-navbar-button-nth-child-3-1 .mobile-navbar-action:nth-child(3) {
    order: 1;
 }
 
-.nth-child-3-2 .mobile-navbar-action:nth-child(3) {
+.order-navbar-button-nth-child-3-2 .mobile-navbar-action:nth-child(3) {
    order: 2;
 }
 
-.nth-child-3-3 .mobile-navbar-action:nth-child(3) {
+.order-navbar-button-nth-child-3-3 .mobile-navbar-action:nth-child(3) {
    order: 3;
 }
 
-.nth-child-3-4 .mobile-navbar-action:nth-child(3) {
+.order-navbar-button-nth-child-3-4 .mobile-navbar-action:nth-child(3) {
    order: 4;
 }
 
-.nth-child-3-5 .mobile-navbar-action:nth-child(3) {
+.order-navbar-button-nth-child-3-5 .mobile-navbar-action:nth-child(3) {
    order: 5;
 }
 
-.nth-child-3-6 .mobile-navbar-action:nth-child(3) {
+.order-navbar-button-nth-child-3-6 .mobile-navbar-action:nth-child(3) {
    order: 6;
 }
 
-/* Section: mobile-navbar-nth-child-4 */
-.nth-child-4-1 .mobile-navbar-action:nth-child(4) {
+/* Section: order-navbar-button-nth-child-4 */
+.order-navbar-button-nth-child-4-1 .mobile-navbar-action:nth-child(4) {
    order: 1;
 }
 
-.nth-child-4-2 .mobile-navbar-action:nth-child(4) {
+.order-navbar-button-nth-child-4-2 .mobile-navbar-action:nth-child(4) {
    order: 2;
 }
 
-.nth-child-4-3 .mobile-navbar-action:nth-child(4) {
+.order-navbar-button-nth-child-4-3 .mobile-navbar-action:nth-child(4) {
    order: 3;
 }
 
-.nth-child-4-4 .mobile-navbar-action:nth-child(4) {
+.order-navbar-button-nth-child-4-4 .mobile-navbar-action:nth-child(4) {
    order: 4;
 }
 
-.nth-child-4-5 .mobile-navbar-action:nth-child(4) {
+.order-navbar-button-nth-child-4-5 .mobile-navbar-action:nth-child(4) {
    order: 5;
 }
 
-.nth-child-4-6 .mobile-navbar-action:nth-child(4) {
+.order-navbar-button-nth-child-4-6 .mobile-navbar-action:nth-child(4) {
    order: 6;
 }
 
-/* Section: mobile-navbar-nth-child-5 */
-.nth-child-5-1 .mobile-navbar-action:nth-child(5) {
+/* Section: order-navbar-button-nth-child-5 */
+.order-navbar-button-nth-child-5-1 .mobile-navbar-action:nth-child(5) {
    order: 1;
 }
 
-.nth-child-5-2 .mobile-navbar-action:nth-child(5) {
+.order-navbar-button-nth-child-5-2 .mobile-navbar-action:nth-child(5) {
    order: 2;
 }
 
-.nth-child-5-3 .mobile-navbar-action:nth-child(5) {
+.order-navbar-button-nth-child-5-3 .mobile-navbar-action:nth-child(5) {
    order: 3;
 }
 
-.nth-child-5-4 .mobile-navbar-action:nth-child(5) {
+.order-navbar-button-nth-child-5-4 .mobile-navbar-action:nth-child(5) {
    order: 4;
 }
 
-.nth-child-5-5 .mobile-navbar-action:nth-child(5) {
+.order-navbar-button-nth-child-5-5 .mobile-navbar-action:nth-child(5) {
    order: 5;
 }
 
-.nth-child-5-6 .mobile-navbar-action:nth-child(5) {
+.order-navbar-button-nth-child-5-6 .mobile-navbar-action:nth-child(5) {
    order: 6;
 }
 
-/* Section: mobile-navbar-nth-child-6 */
-.nth-child-6-1 .mobile-navbar-action:nth-child(6) {
+/* Section:order-navbar-button-nth-child-6 */
+.order-navbar-button-nth-child-6-1 .mobile-navbar-action:nth-child(6) {
    order: 1;
 }
 
-.nth-child-6-2 .mobile-navbar-action:nth-child(6) {
+.order-navbar-button-nth-child-6-2 .mobile-navbar-action:nth-child(6) {
    order: 2;
 }
 
-.nth-child-6-3 .mobile-navbar-action:nth-child(6) {
+.order-navbar-button-nth-child-6-3 .mobile-navbar-action:nth-child(6) {
    order: 3;
 }
 
-.nth-child-6-4 .mobile-navbar-action:nth-child(6) {
+.order-navbar-button-nth-child-6-4 .mobile-navbar-action:nth-child(6) {
    order: 4;
 }
 
-.nth-child-6-5 .mobile-navbar-action:nth-child(6) {
+.order-navbar-button-nth-child-6-5 .mobile-navbar-action:nth-child(6) {
    order: 5;
 }
 
-.nth-child-6-6 .mobile-navbar-action:nth-child(6) {
+.order-navbar-button-nth-child-6-6 .mobile-navbar-action:nth-child(6) {
    order: 6;
 }
 
-/*@settings
-name: Lumines Theme Settings
-id: lumines-theme
+/* @settings
+
+name: Lumines Theme Obsidian
+id: lumines-theme-obsidian
 settings:
    -
-      title: Main UI settings
-      title.ru: Важные UI настройки
       type: heading
       level: 1
+      title: General theme settings
+      title.ru: Главные настройки в теме
       collapsed: true
    -
-      id: obsidian-font
-      title: Choose font in the vault
-      title.ru: Текущий шрифт в хранилище
-      description: Choose the font used in Obsidian.
-      description.ru: Подберите Обсидиану нужный шрифт.
+      id: obsidian-fonts
       type: class-select
-      allowEmpty: false
-      default: font-jetbrains-mono
+      title: Vault primary font
+      title.ru: Основной шрифт хранилища
+      description: Select a font for the vault.
+      description.ru: Определите шрифт для хранилища.
+      default: obsidian-font-jetbrains-mono
       options:
-      -
-         label: JetBrains Mono
-         value: font-jetbrains-mono
-      -
-         label: Excalifont
-         value: font-excalifont
-      -
-         label: Cascadia Code
-         value: font-cascadia-code
+         -
+            label: JetBrains Mono
+            value: obsidian-font-jetbrains-mono
+         -
+            label: Excalifont
+            value: obsidian-font-excalifont
+         -
+            label: Cascadia Code
+            value: obsidian-font-cascadia-code
    -
       id: folder-titles-color
-      title: Folder colors in sidebar
-      title.ru: Цвет папок в боковом меню
-      description: Select a color for folder titles.
-      description.ru: Выберите цвет для названий папок.
       type: class-select
-      allowEmpty: false
+      title: Folder names color
+      title.ru: Цвета для названий папок
+      description: Set “None” to turn this off.
+      description.ru: Выберите “None” для отключения.
       default: folder-titles-accent
       options:
-      -
-         label: Accent
-         value: folder-titles-accent
-      -
-         label: Red
-         value: folder-titles-red
-      -
-         label: Orange
-         value: folder-titles-orange
-      -
-         label: Yellow
-         value: folder-titles-yellow
-      -
-         label: Lime
-         value: folder-titles-lime
-      -
-         label: Green
-         value: folder-titles-green
-      -
-         label: Cyan
-         value: folder-titles-cyan
-      -
-         label: Sky
-         value: folder-titles-sky
-      -
-         label: Blue
-         value: folder-titles-blue
-      -
-         label: Indigo
-         value: folder-titles-indigo
-      -
-         label: Violet
-         value: folder-titles-violet
-      -
-         label: Pink
-         value: folder-titles-pink
-      -
-         label: Gray
-         value: folder-titles-gray
-      -
-         label: None
-         value: folder-titles-none
+         -
+            label: Accent
+            value: folder-titles-accent
+         -
+            label: Red
+            value: folder-titles-red
+         -
+            label: Orange
+            value: folder-titles-orange
+         -
+            label: Yellow
+            value: folder-titles-yellow
+         -
+            label: Lime
+            value: folder-titles-lime
+         -
+            label: Green
+            value: folder-titles-green
+         -
+            label: Cyan
+            value: folder-titles-cyan
+         -
+            label: Sky
+            value: folder-titles-sky
+         -
+            label: Blue
+            value: folder-titles-blue
+         -
+            label: Indigo
+            value: folder-titles-indigo
+         -
+            label: Violet
+            value: folder-titles-violet
+         -
+            label: Pink
+            value: folder-titles-pink
+         -
+            label: Gray
+            value: folder-titles-gray
+         -
+            label: None
+            value: folder-titles-none
    -
       id: header-padding-top
-      title: Header top spacing value
-      title.ru: Верхний отступ заголовков
-      description: Enter the value only in em units.
-      description.ru: Задавайте значение в em единицах.
       type: variable-number
+      title: Header padding top
+      title.ru: Верхний отступ заголовка
+      description: Enter the value in em units.
+      description.ru: Задайте значение в em единицах.
       default: .7
       format: em
    -
-      title: Hide UI elements
-      title.ru: Видимость элементов
       type: heading
       level: 1
+      title: UI elements visibility
+      title.ru: Видимость всех элементов
       collapsed: true
    -
-      title: Hide icons
-      title.ru: Скрыть иконки
       type: heading
       level: 2
+      title: Various devices
+      title.ru: Всевозможные устройства
       collapsed: true
    -
-      id: lucide-mobile-chevrons
-      title: Mobile chevrons icon
-      title.ru: Иконка «Мобильные стрелки»
-      description: Hide the mobile chevrons icon.
-      description.ru: Скрыть иконку «Мобильные стрелки».
-      type: class-toggle
-      default: false
+      type: heading
+      level: 3
+      title: Hide icons (Empty)
+      title.ru: Скрыть иконки (Пусто)
+      collapsed: true
    -
+      type: heading
+      level: 3
       title: Hide buttons
       title.ru: Скрыть кнопки
+      collapsed: true
+   -
+      id: hide-button-new-note
+      type: class-toggle
+      title: “New note” button
+      title.ru: Кнопка «Новый файл»
+      description: Hide “New note” button.
+      description.ru: Скрыть кнопку «Новый файл».
+   -
+      id: hide-button-new-folder
+      type: class-toggle
+      title: “New folder” button
+      title.ru: Кнопка «Новая папка»
+      description: Hide “New folder” button.
+      description.ru: Скрыть кнопку «Новая папка».
+   -
+      id: hide-button-sort-order
+      type: class-toggle
+      title: “Sort order” button
+      title.ru: Кнопка «Отсортировать»
+      description: Hide “Sort order” button.
+      description.ru: Скрыть кнопку «Отсортировать».
+   -
+      id: hide-button-auto-reveal
+      type: class-toggle
+      title: “Auto-reveal” button
+      title.ru: Кнопка «Автораскрытие»
+      description: Hide “Auto-reveal” button.
+      description.ru: Скрыть кнопку «Автораскрытие».
+   -
+      id: hide-button-collapse-all
+      type: class-toggle
+      title: “Collapse all” button
+      title.ru: Кнопка «Свернуть все»
+      description: Hide “Collapse all” button.
+      description.ru: Скрыть кнопку «Свернуть все».
+   -
+      id: hide-button-reading-mode
+      type: class-toggle
+      title: “Reading mode” button
+      title.ru: Кнопка «Режим чтения»
+      description: Hide “Reading mode” button.
+      description.ru: Скрыть кнопку «Режим чтения».
+   -
+      id: hide-button-search-settings
+      type: class-toggle
+      title: “Search settings” button
+      title.ru: Кнопка «Настройки поиска»
+      description: Hide “Search settings” button.
+      description.ru: Скрыть кнопку «Настройки поиска».
+   -
       type: heading
       level: 2
+      title: Mobile devices
+      title.ru: Мобильные устройства
       collapsed: true
    -
-      id: guide-button
-      title: Guide / help button
-      title.ru: Кнопка «Справочник»
-      description: Hide the guide / help button.
-      description.ru: Скрыть кнопку «Справочник».
-      type: class-toggle
-      default: false
+      type: heading
+      level: 3
+      title: Hide icons
+      title.ru: Скрыть иконки
+      collapsed: true
    -
-      id: new-note-button
-      title: New note button
-      title.ru: Кнопка «Создать файл»
-      description: Hide the new note button.
-      description.ru: Скрыть кнопку «Создать файл».
+      id: hide-icon-mobile-chevrons
       type: class-toggle
-      default: false
+      title: “Mobile chevrons” icon
+      title.ru: Иконка «Мобильные стрелки»
+      description: Hide “Mobile chevrons” icon.
+      description.ru: Скрыть иконку «Мобильные стрелки».
    -
-      id: new-folder-button
-      title: New folder button
-      title.ru: Кнопка «Создать папку»
-      description: Hide the new folder button.
-      description.ru: Скрыть кнопку «Создать папку».
+      type: heading
+      level: 3
+      title: Hide buttons
+      title.ru: Скрыть кнопки
+      collapsed: true
+   -
+      id: hide-button-mobile-navbar-action-back
       type: class-toggle
-      default: false
+      title: “Navigate back” button
+      title.ru: Кнопка «Вернуться назад»
+      description: Hide “Navigate back” button.
+      description.ru: Скрыть кнопку «Вернуться назад».
    -
-      id: sort-order-button
-      title: Sort order button
-      title.ru: Кнопка «Порядок сортировки»
-      description: Hide the sort order button.
-      description.ru: Скрыть кнопку «Порядок сортировки».
+      id: hide-button-mobile-navbar-action-forward
       type: class-toggle
-      default: false
+      title: “Navigate forward” button
+      title.ru: Кнопка «Вернуться вперед»
+      description: Hide “Navigate forward” button.
+      description.ru: Скрыть кнопку «Вернуться вперед».
    -
-      id: auto-reveal-button
-      title: Auto-reveal button
-      title.ru: Кнопка «Авто-раскрытие»
-      description: Hide the auto-reveal button.
-      description.ru: Скрыть кнопку «Авто-раскрытие».
+      id: hide-button-mobile-navbar-action-quick-switcher
       type: class-toggle
-      default: false
+      title: “Quick switcher” button
+      title.ru: Кнопка «Быстрый переход»
+      description: Hide “Quick switcher” button.
+      description.ru: Скрыть кнопку «Быстрый переход».
    -
-      id: expand-all-button
-      title: Expand all button
-      title.ru: Кнопка «Развернуть все»
-      description: Hide the expand all button.
-      description.ru: Скрыть кнопку «Развернуть все».
+      id: hide-button-mobile-navbar-action-new-tab
       type: class-toggle
-      default: false
+      title: “New tab” button
+      title.ru: Кнопка «Новая вкладка»
+      description: Hide “New tab” button.
+      description.ru: Скрыть кнопку «Новая вкладка».
    -
-      id: reading-mode-button
-      title: Reading mode button
-      title.ru: Кнопка «Режим чтения»
-      description: Hide the reading mode button.
-      description.ru: Скрыть кнопку «Режим чтения».
+      id: hide-button-mobile-navbar-action-tabs
       type: class-toggle
-      default: false
+      title: “Open tabs” button
+      title.ru: Кнопка «Открыть вкладки»
+      description: Hide “Open tabs” button.
+      description.ru: Скрыть кнопку «Открыть вкладки».
    -
-      id: search-settings-button
-      title: Search settings button
-      title.ru: Кнопка «Настройки поиска»
-      description: Hide the search settings button.
-      description.ru: Скрыть кнопку «Настройки поиска».
+      id: hide-button-mobile-navbar-action-menu
       type: class-toggle
-      default: false
+      title: “Ribbon menu” button
+      title.ru: Кнопка «Выпадающее меню»
+      description: Hide “Ribbon menu” button.
+      description.ru: Скрыть кнопку «Выпадающее меню».
    -
-      id: more-context-button
-      title: More context button
-      title.ru: Кнопка «Больше контекста»
-      description: Hide the more context button.
-      description.ru: Скрыть кнопку «Больше контекста».
+      type: heading
+      level: 2
+      title: Desktop devices
+      title.ru: Десктопные устройства
+      collapsed: true
+   -
+      type: heading
+      level: 3
+      title: Hide icons (Empty)
+      title.ru: Скрыть иконки (Пусто)
+      collapsed: true
+   -
+      type: heading
+      level: 3
+      title: Hide buttons
+      title.ru: Скрыть кнопки
+      collapsed: true
+   -
+      id: hide-button-help
       type: class-toggle
-      default: false
+      title: “Help” button
+      title.ru: Кнопка «Помощь»
+      description: Hide “Help” button.
+      description.ru: Скрыть кнопку «Помощь».
    -
-      id: collapse-results-button
-      title: Collapse results button
-      title.ru: Кнопка «Скрыть результаты»
-      description: Hide the collapse results button.
-      description.ru: Скрыть кнопку «Скрыть результаты».
-      type: class-toggle
-      default: false
-   -
-      id: search-filter-button
-      title: Search filter button
-      title.ru: Кнопка «Фильтр поиска»
-      description: Hide the search filter button.
-      description.ru: Скрыть кнопку «Фильтр поиска».
-      type: class-toggle
-      default: false
-   -
-      title: Buttons (navbar)
-      title.ru: Моб. меню навигации
       type: heading
       level: 1
+      title: Mobile navigation menu
+      title.ru: Мобильное меню навигации
       collapsed: true
    -
-      id: mobile-navbar-nth-child-1
-      title: Navigate back button
+      id: order-navbar-button-nth-child-1
+      type: class-select
+      title: “Navigate back” button
       title.ru: Кнопка «Вернуться назад»
-      description: Choose the position for the 1st button.
+      description: Select the position for the 1st button.
       description.ru: Выберите позицию для 1-ой кнопки.
-      type: class-select
-      allowEmpty: false
-      default: nth-child-1-1
+      default: order-navbar-button-nth-child-1-1
       options:
-      -
-         label: 1
-         value: nth-child-1-1
-      -
-         label: 2
-         value: nth-child-1-2
-      -
-         label: 3
-         value: nth-child-1-3
-      -
-         label: 4
-         value: nth-child-1-4
-      -
-         label: 5
-         value: nth-child-1-5
-      -
-         label: 6
-         value: nth-child-1-6
+         -
+            label: 1
+            value: order-navbar-button-nth-child-1-1
+         -
+            label: 2
+            value: order-navbar-button-nth-child-1-2
+         -
+            label: 3
+            value: order-navbar-button-nth-child-1-3
+         -
+            label: 4
+            value: order-navbar-button-nth-child-1-4
+         -
+            label: 5
+            value: order-navbar-button-nth-child-1-5
+         -
+            label: 6
+            value: order-navbar-button-nth-child-1-6
    -
-      id: mobile-navbar-nth-child-2
-      title: Navigate forward button
+      id: order-navbar-button-nth-child-2
+      type: class-select
+      title: “Navigate forward” button
       title.ru: Кнопка «Вернуться вперед»
-      description: Choose the position for the 2nd button.
+      description: Select the position for the 2nd button.
       description.ru: Выберите позицию для 2-ой кнопки.
-      type: class-select
-      allowEmpty: false
-      default: nth-child-2-2
+      default: order-navbar-button-nth-child-2-2
       options:
-      -
-         label: 1
-         value: nth-child-2-1
-      -
-         label: 2
-         value: nth-child-2-2
-      -
-         label: 3
-         value: nth-child-2-3
-      -
-         label: 4
-         value: nth-child-2-4
-      -
-         label: 5
-         value: nth-child-2-5
-      -
-         label: 6
-         value: nth-child-2-6
+         -
+            label: 1
+            value: order-navbar-button-nth-child-2-1
+         -
+            label: 2
+            value: order-navbar-button-nth-child-2-2
+         -
+            label: 3
+            value: order-navbar-button-nth-child-2-3
+         -
+            label: 4
+            value: order-navbar-button-nth-child-2-4
+         -
+            label: 5
+            value: order-navbar-button-nth-child-2-5
+         -
+            label: 6
+            value: order-navbar-button-nth-child-2-6
    -
-      id: mobile-navbar-nth-child-3
-      title: Quick switcher button
+      id: order-navbar-button-nth-child-3
+      type: class-select
+      title: “Quick switcher” button
       title.ru: Кнопка «Быстрый переход»
-      description: Choose the position for the 3rd button.
+      description: Select the position for the 3rd button.
       description.ru: Выберите позицию для 3-ей кнопки.
-      type: class-select
-      allowEmpty: false
-      default: nth-child-3-3
+      default: order-navbar-button-nth-child-3-3
       options:
-      -
-         label: 1
-         value: nth-child-3-1
-      -
-         label: 2
-         value: nth-child-3-2
-      -
-         label: 3
-         value: nth-child-3-3
-      -
-         label: 4
-         value: nth-child-3-4
-      -
-         label: 5
-         value: nth-child-3-5
-      -
-         label: 6
-         value: nth-child-3-6
+         -
+            label: 1
+            value: order-navbar-button-nth-child-3-1
+         -
+            label: 2
+            value: order-navbar-button-nth-child-3-2
+         -
+            label: 3
+            value: order-navbar-button-nth-child-3-3
+         -
+            label: 4
+            value: order-navbar-button-nth-child-3-4
+         -
+            label: 5
+            value: order-navbar-button-nth-child-3-5
+         -
+            label: 6
+            value: order-navbar-button-nth-child-3-6
    -
-      id: mobile-navbar-nth-child-4
-      title: New tab button
+      id: order-navbar-button-nth-child-4
+      type: class-select
+      title: “New tab” button
       title.ru: Кнопка «Новая вкладка»
-      description: Choose the position for the 4th button.
+      description: Select the position for the 4th button.
       description.ru: Выберите позицию для 4-ой кнопки.
-      type: class-select
-      allowEmpty: false
-      default: nth-child-4-4
+      default: order-navbar-button-nth-child-4-4
       options:
-      -
-         label: 1
-         value: nth-child-4-1
-      -
-         label: 2
-         value: nth-child-4-2
-      -
-         label: 3
-         value: nth-child-4-3
-      -
-         label: 4
-         value: nth-child-4-4
-      -
-         label: 5
-         value: nth-child-4-5
-      -
-         label: 6
-         value: nth-child-4-6
+         -
+            label: 1
+            value: order-navbar-button-nth-child-4-1
+         -
+            label: 2
+            value: order-navbar-button-nth-child-4-2
+         -
+            label: 3
+            value: order-navbar-button-nth-child-4-3
+         -
+            label: 4
+            value: order-navbar-button-nth-child-4-4
+         -
+            label: 5
+            value: order-navbar-button-nth-child-4-5
+         -
+            label: 6
+            value: order-navbar-button-nth-child-4-6
    -
-      id: mobile-navbar-nth-child-5
-      title: Open tabs button
+      id: order-navbar-button-nth-child-5
+      type: class-select
+      title: “Open tabs” button
       title.ru: Кнопка «Открыть вкладки»
-      description: Choose the position for the 5th button.
+      description: Select the position for the 5th button.
       description.ru: Выберите позицию для 5-ой кнопки.
-      type: class-select
-      allowEmpty: false
-      default: nth-child-5-5
+      default: order-navbar-button-nth-child-5-5
       options:
-      -
-         label: 1
-         value: nth-child-5-1
-      -
-         label: 2
-         value: nth-child-5-2
-      -
-         label: 3
-         value: nth-child-5-3
-      -
-         label: 4
-         value: nth-child-5-4
-      -
-         label: 5
-         value: nth-child-5-5
-      -
-         label: 6
-         value: nth-child-5-6
+         -
+            label: 1
+            value: order-navbar-button-nth-child-5-1
+         -
+            label: 2
+            value: order-navbar-button-nth-child-5-2
+         -
+            label: 3
+            value: order-navbar-button-nth-child-5-3
+         -
+            label: 4
+            value: order-navbar-button-nth-child-5-4
+         -
+            label: 5
+            value: order-navbar-button-nth-child-5-5
+         -
+            label: 6
+            value: order-navbar-button-nth-child-5-6
    -
-      id: mobile-navbar-nth-child-6
-      title: Ribbon menu button
-      title.ru: Кнопка «Ленточное меню»
-      description: Choose the position for the 6th button.
-      description.ru: Выберите позицию для 6-ой кнопки.
+      id: order-navbar-button-nth-child-6
       type: class-select
-      allowEmpty: false
-      default: nth-child-6-6
+      title: “Ribbon menu” button
+      title.ru: Кнопка «Выпадающее меню»
+      description: Select the position for the 6th button.
+      description.ru: Выберите позицию для 6-ой кнопки.
+      default: order-navbar-button-nth-child-6-6
       options:
-      -
-         label: 1
-         value: nth-child-6-1
-      -
-         label: 2
-         value: nth-child-6-2
-      -
-         label: 3
-         value: nth-child-6-3
-      -
-         label: 4
-         value: nth-child-6-4
-      -
-         label: 5
-         value: nth-child-6-5
-      -
-         label: 6
-         value: nth-child-6-6
+         -
+            label: 1
+            value: order-navbar-button-nth-child-6-1
+         -
+            label: 2
+            value: order-navbar-button-nth-child-6-2
+         -
+            label: 3
+            value: order-navbar-button-nth-child-6-3
+         -
+            label: 4
+            value: order-navbar-button-nth-child-6-4
+         -
+            label: 5
+            value: order-navbar-button-nth-child-6-5
+         -
+            label: 6
+            value: order-navbar-button-nth-child-6-6
+
 */

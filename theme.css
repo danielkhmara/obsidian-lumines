@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.19
+Lumines Obsidian Version: 1.1.0-alpha.20
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -2329,7 +2329,7 @@ ul.dataview-ul {
    background-color: hsla(var(--primary-violet), var(--callout-background-color-opacity));
    --callout-title-color: hsl(var(--primary-violet));
    --callout-icon-color: hsl(var(--primary-violet));
-   --callout-icon-mask: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9ImN1cnJlbnRDb2xvciIgIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb25zLXRhYmxlci1maWxsZWQgaWNvbi10YWJsZXItcHV6emxlIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTAgMmEzIDMgMCAwIDEgMi45OTUgMi44MjRsLjAwNSAuMTc2djFoM2EyIDIgMCAwIDEgMS45OTUgMS44NWwuMDA1IC4xNXYzaDFhMyAzIDAgMCAxIC4xNzYgNS45OTVsLS4xNzYgLjAwNWgtMXYzYTIgMiAwIDAgMSAtMS44NSAxLjk5NWwtLjE1IC4wMDVoLTNhMiAyIDAgMCAxIC0xLjk5NSAtMS44NWwtLjAwNSAtLjE1di0xYTEgMSAwIDAgMCAtMS45OTMgLS4xMTdsLS4wMDcgLjExN3YxYTIgMiAwIDAgMSAtMS44NSAxLjk5NWwtLjE1IC4wMDVoLTNhMiAyIDAgMCAxIC0xLjk5NSAtMS44NWwtLjAwNSAtLjE1di0zYTIgMiAwIDAgMSAxLjg1IC0xLjk5NWwuMTUgLS4wMDVoMWExIDEgMCAwIDAgLjExNyAtMS45OTNsLS4xMTcgLS4wMDdoLTFhMiAyIDAgMCAxIC0xLjk5NSAtMS44NWwtLjAwNSAtLjE1di0zYTIgMiAwIDAgMSAxLjg1IC0xLjk5NWwuMTUgLS4wMDVoM3YtMWEzIDMgMCAwIDEgMyAtM3oiIC8+PC9zdmc+);
+   --callout-icon-mask: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9ImN1cnJlbnRDb2xvciIgIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb25zLXRhYmxlci1maWxsZWQgaWNvbi10YWJsZXItY2xpcGJvYXJkIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMTcuOTk3IDQuMTdhMyAzIDAgMCAxIDIuMDAzIDIuODN2MTJhMyAzIDAgMCAxIC0zIDNoLTEwYTMgMyAwIDAgMSAtMyAtM3YtMTJhMyAzIDAgMCAxIDIuMDAzIC0yLjgzYTQgNCAwIDAgMCAzLjk5NyAzLjgzaDRhNCA0IDAgMCAwIDMuOTggLTMuNTk3em0tMy45OTcgLTIuMTdhMiAyIDAgMSAxIDAgNGgtNGEyIDIgMCAxIDEgMCAtNHoiIC8+PC9zdmc+);
 }
 
 .callout[data-callout="quote"],

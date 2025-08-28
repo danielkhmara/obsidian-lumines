@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.21
+Lumines Obsidian Version: 1.1.0-alpha.22
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -64,40 +64,25 @@ Excalidraw Font (https://plus.excalidraw.com/excalifont) | SIL Open Font License
 }
 
 /* Section: theme-dark */
-.theme-dark {
-   --color-base-00: hsl(0, 0%, 11.8%);
-   --color-base-05: hsl(0, 0%, 13.8%);
-   --color-base-10: hsl(0, 0%, 15.8%);
-   --color-base-20: hsl(0, 0%, 17.8%);
-   --color-base-25: hsl(0, 0%, 22.8%);
-   --color-base-30: hsl(0, 0%, 27.8%);
-   --color-base-35: hsl(0, 0%, 32.8%);
-   --color-base-40: hsl(0, 0%, 37.8%);
-   --color-base-50: hsl(0, 0%, 42.8%);
-   --color-base-60: hsl(0, 0%, 47.8%);
-   --color-base-70: hsl(0, 0%, 88.8%);
-   --color-base-80: hsl(0, 0%, 92.8%);
-   --color-base-100: hsl(0, 0%, 100%);
-}
-
+.theme-dark,
 .is-mobile.theme-dark {
-   --color-base-00: hsl(0, 0%, 11%);
-   --color-base-05: hsl(0, 0%, 13%);
-   --color-base-10: hsl(0, 0%, 15%);
-   --color-base-20: hsl(0, 0%, 17%);
-   --color-base-25: hsl(0, 0%, 22%);
-   --color-base-30: hsl(0, 0%, 27%);
-   --color-base-35: hsl(0, 0%, 32%);
-   --color-base-40: hsl(0, 0%, 37%);
-   --color-base-50: hsl(0, 0%, 42%);
-   --color-base-60: hsl(0, 0%, 47%);
-   --color-base-70: hsl(0, 0%, 88%);
-   --color-base-80: hsl(0, 0%, 92%);
+   --color-base-00: hsl(0, 0%, 12%);
+   --color-base-05: hsl(0, 0%, 14%);
+   --color-base-10: hsl(0, 0%, 16%);
+   --color-base-20: hsl(0, 0%, 18%);
+   --color-base-25: hsl(0, 0%, 25%);
+   --color-base-30: hsl(0, 0%, 30%);
+   --color-base-35: hsl(0, 0%, 35%);
+   --color-base-40: hsl(0, 0%, 40%);
+   --color-base-50: hsl(0, 0%, 45%);
+   --color-base-60: hsl(0, 0%, 84%);
+   --color-base-70: hsl(0, 0%, 87%);
+   --color-base-80: hsl(0, 0%, 90%);
    --color-base-100: hsl(0, 0%, 100%);
 }
 
 /* Section: theme-light */
-.light-dark {
+.theme-light {
    --color-base-00: hsl(0, 0%, 98.8%);
    --color-base-05: hsl(0, 0%, 93.8%);
    --color-base-10: hsl(0, 0%, 87.8%);
@@ -113,7 +98,7 @@ Excalidraw Font (https://plus.excalidraw.com/excalifont) | SIL Open Font License
    --color-base-100: hsl(0, 0%, 4.8%);
 }
 
-.is-mobile.light-dark {
+.is-mobile.theme-light {
    --color-base-00: hsl(0, 0%, 98%);
    --color-base-05: hsl(0, 0%, 93%);
    --color-base-10: hsl(0, 0%, 87%);
@@ -196,6 +181,8 @@ body {
    --background-primary: var(--color-base-00);
    --background-secondary: var(--color-base-05);
 
+   --text-muted: var(--color-base-70);
+   --text-faint: var(--color-base-40);
    --text-normal: var(--color-base-80);
    --inline-title-color: var(--color-base-70);
 
@@ -223,8 +210,8 @@ body {
    --background-modifier-active-hover: var(--background-modifier-hover);
    --background-modifier-form-field: var(--color-base-05) !important;
 
-   --dropdown-background: var(--color-base-20);
-   --dropdown-background-hover: var(--color-base-25);
+   --dropdown-background: var(--color-base-20) !important;
+   --dropdown-background-hover: var(--color-base-25) !important;
    --interactive-hover: var(--color-base-25) !important;
    --interactive-normal: var(--color-base-20) !important;
 
@@ -259,8 +246,7 @@ body {
 
    /* Section: metadata */
    --metadata-padding: 0;
-   --pill-color-remove: var(--color-base-35);
-   --metadata-label-text-color-hover: var(--text-muted);
+   --pill-color-remove: var(--text-faint);
    --metadata-label-text-color: var(--text-muted);
    --metadata-input-text-color: var(--text-normal);
    --metadata-property-radius: var(--radius-m);
@@ -305,7 +291,7 @@ body {
    /* Section: codeblock */
    --code-radius: var(--radius-m);
    --code-normal: var(--color-base-80);
-   --code-comment: var(--color-base-35);
+   --code-comment: var(--text-faint);
    --code-operator: var(--color-base-80);
    --code-background: var(--color-base-05);
    --code-punctuation: var(--color-base-60);
@@ -330,12 +316,14 @@ body {
    --nav-indentation-guide-color: rgba(var(--mono-rgb-100), 0.07);
 
    /* Section: tabs-view */
+   --tab-text-color: var(--text-faint);
+   --tab-text-color-active: var(--text-muted);
+   --tab-text-color-focused: var(--text-faint);
+   --tab-text-color-focused-active: var(--text-faint);
+   --tab-text-color-focused-active-current: var(--text-normal);
    --tab-curve: var(--radius-m);
    --tab-radius: var(--radius-s);
    --tab-radius-active: var(--radius-m) var(--radius-m) 0 0;
-   --tab-text-color-active: var(--color-base-80);
-   --tab-text-color-focused-active: var(--color-base-60);
-   --tab-text-color-focused-active-current: var(--color-base-80);
 
    /* Section: fonts */
    --font-weight-table-titles: 700;

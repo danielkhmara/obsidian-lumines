@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.28
+Lumines Obsidian Version: 1.1.0-alpha.29
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -161,8 +161,6 @@ body {
    --primary-white: var(--white-h), var(--white-s), var(--white-l);
 
    /* Section: key-variables */
-   --font-default: "JetBrains Mono", monospace;
-
    --background-primary: var(--color-base-00);
    --background-secondary: var(--color-base-05);
 
@@ -4153,7 +4151,7 @@ settings:
       title.ru: Основной шрифт хранилища
       description: Select a font for the vault.
       description.ru: Определите шрифт для хранилища.
-      default: obsidian-font-jetbrains-mono
+      default: none
       options:
          -
             label: JetBrains Mono
@@ -4164,6 +4162,9 @@ settings:
          -
             label: Cascadia Code
             value: obsidian-font-cascadia-code
+         -
+            label: None
+            value: none
    -
       id: folder-titles-color
       type: class-select

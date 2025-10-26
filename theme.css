@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.27
+Lumines Obsidian Version: 1.1.0-alpha.28
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -329,7 +329,7 @@ body {
    --graph-node-unresolved: var(--text-faint);
    --graph-node-attachment: hsl(var(--primary-yellow));
    --graph-node-focused: var(--background-modifier-border-focus);
-   --graph-line: var(--color-base-20, var(--background-modifier-border-focus));
+   --graph-line: var(--color-base-30, var(--background-modifier-border-focus));
 
    /* Section: bases */
    --bases-embed-border-color: var(--color-base-10);

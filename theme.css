@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.30
+Lumines Obsidian Version: 1.1.0-alpha.31
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -488,23 +488,25 @@ a.tag {
    text-overflow: ellipsis;
 }
 
+ul.dataview-ul {
+   list-style: none;
+   padding-inline-start: 0;
+}
+
 .dataview.list-view-ul {
    margin-bottom: revert;
 }
 
-ul.dataview-ul {
-   list-style: none;
-   padding-inline-start: 0;
-   margin-block-start: 0em !important;
+.block-language-dataview.node-insert-event > table > tbody > tr > td > ul > li {
+   margin-inline-start: 0px;
 }
 
-.dataview.table-view-table > thead > tr > th {
-   cursor: default;
-   user-select: none;
-   color: var(--text-normal);
-   padding: 6px var(--cell-padding-x) .5rem;
-   border-bottom: 1px solid var(--color-base-10);
-   background-color: var(--color-base-00) !important;
+.dataview.table-view-table {
+   box-sizing: border-box;
+   min-width: max-content;
+   margin-block: 0;
+   --cell-padding-x: 1rem;
+   --cell-padding-y: 10px;
 }
 
 .block-language-dataview,
@@ -514,20 +516,48 @@ ul.dataview-ul {
    border-radius: var(--radius-m) !important;
 }
 
-.dataview.table-view-table > thead {
-   padding-left: 1rem;
+.dataview.small-text {
+   color: var(--text-faint);
 }
 
-.dataview.table-view-table {
-   margin-block: 0;
+.dataview.table-view-table > thead > tr > th {
+   cursor: default;
+   white-space: nowrap;
+   padding: .5rem var(--cell-padding-x);
+   border-bottom: 1px solid var(--color-base-10);
+   background-color: var(--color-base-00);
+}
+
+.dataview.table-view-table:has(> thead > tr > th:nth-child(4)) {
+   table-layout: auto;
+}
+
+.dataview.table-view-table:not(:has(> thead > tr > th:nth-child(4))) {
    table-layout: fixed;
-   --cell-padding-x: 1rem;
-   --cell-padding-y: 10px;
+}
+
+.dataview.table-view-table th,
+.dataview.table-view-table td {
+   min-width: 5rem;
+   max-width: 14.5rem;
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+   .dataview.table-view-table th,
+   .dataview.table-view-table td {
+      max-width: calc(14.5rem / 2);
+   }
 }
 
 .dataview.table-view-table > tbody > tr > td {
    cursor: default;
    padding: var(--cell-padding-y) var(--cell-padding-x);
+}
+
+.dataview.table-view-table > tbody > tr > td span {
+   white-space: normal;
+   word-wrap: break-word;
+   overflow-wrap: anywhere;
 }
 
 .dataview.table-view-table > tbody > tr,
@@ -540,26 +570,9 @@ ul.dataview-ul {
    background-color: var(--color-base-00) !important;
 }
 
-.dataview.table-view-table > thead > tr > th > .dataview.small-text::before,
-.dataview.table-view-table > thead > tr > th > .dataview.small-text::after {
-   content: unset;
-}
-
-.dataview.table-view-table > tbody > tr:first-child > td {
-   padding-top: 10px;
-}
-
-.dataview.table-view-table > tbody > tr:last-child > td {
-   padding-bottom: 10px;
-}
-
 .dataview.result-group {
    padding-left: 0;
    padding: .5rem 0 .5rem;
-}
-
-.block-language-dataview.node-insert-event > table > tbody > tr > td > ul > li {
-   margin-inline-start: 0px;
 }
 
 .dataview.dataview-error {

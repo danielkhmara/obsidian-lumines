@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.35
+Lumines Obsidian Version: 1.1.0-alpha.36
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -479,6 +479,27 @@ body:not(.is-mobile) .workspace-leaf.mod-active .tree-item-self.has-focus {
 .workspace-drawer-header-name-chevron,
 .metadata-add-button .text-button-icon,
 .metadata-property-value .clickable-icon[aria-label="Open daily note"] {
+   display: none;
+}
+
+/* Section: calendar */
+.calendar col:first-child {
+   width: 2.4em;
+}
+
+.nav.svelte-1vwr9dd {
+   padding-right: 0 !important;
+}
+
+.title.svelte-1vwr9dd {
+   font-size: var(--h3-size) !important;
+}
+
+.is-mobile .title.svelte-1vwr9dd {
+   padding-left: 0.4em;
+}
+
+.reset-button.svelte-1vwr9dd {
    display: none;
 }
 
@@ -3896,19 +3917,6 @@ input[type="checkbox"]:checked::after {
    .workspace-drawer-active-tab-chevron,
    .search-empty-state {
       display: none;
-   }
-
-   /* Section: calendar */
-   .title.svelte-1vwr9dd {
-      padding-left: 5px;
-   }
-
-   .calendar.svelte-pcimu8 {
-      margin-left: -4px;
-   }
-
-   .right-nav.svelte-1vwr9dd {
-      margin-right: 4px;
    }
 }
 

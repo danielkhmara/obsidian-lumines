@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.37
+Lumines Obsidian Version: 1.1.0-alpha.38
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -569,7 +569,8 @@ ul.dataview-ul {
 @media (max-width: 600px) and (orientation: portrait) {
    .dataview.table-view-table th,
    .dataview.table-view-table td {
-      max-width: calc(14.5rem / 2);
+      --font-text-diff-size: calc(16 - (var(--font-text-size) / 1px));
+      max-width: calc((14.5rem + (var(--font-text-diff-size) * 1rem)) / 2);
    }
 }
 

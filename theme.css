@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.39
+Lumines Obsidian Version: 1.1.0-alpha.40
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -2195,7 +2195,8 @@ ul.dataview-ul {
 .callout[data-callout="flame"] .callout-icon > svg,
 .callout[data-callout="lemon"] .callout-icon > svg,
 .callout[data-callout="favicon"] .callout-icon > svg,
-.callout[data-callout="clipboard"] .callout-icon > svg {
+.callout[data-callout="clipboard"] .callout-icon > svg,
+.callout[data-callout="list"] .callout-icon > svg {
    display: none;
 }
 
@@ -2301,7 +2302,8 @@ ul.dataview-ul {
 .callout[data-callout="flame"] .callout-icon::before,
 .callout[data-callout="lemon"] .callout-icon::before,
 .callout[data-callout="favicon"] .callout-icon::before,
-.callout[data-callout="clipboard"] .callout-icon::before {
+.callout[data-callout="clipboard"] .callout-icon::before,
+.callout[data-callout="list"] .callout-icon::before {
    content: '';
    display: inline-block;
    width: var(--custom-icon-size);
@@ -2438,10 +2440,10 @@ ul.dataview-ul {
 
 /* Section: custom-callouts */
 .callout[data-callout="file"] {
-   border-color: hsla(var(--primary-orange), var(--callout-border-opacity));
-   background-color: hsla(var(--primary-orange), var(--callout-background-color-opacity));
-   --callout-title-color: hsl(var(--primary-orange));
-   --callout-icon-color: hsl(var(--primary-orange));
+   border-color: hsla(var(--primary-violet), var(--callout-border-opacity));
+   background-color: hsla(var(--primary-violet), var(--callout-background-color-opacity));
+   --callout-title-color: hsl(var(--primary-violet));
+   --callout-icon-color: hsl(var(--primary-violet));
    --callout-icon-mask: url(data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9ImN1cnJlbnRDb2xvciIgIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb25zLXRhYmxlci1maWxsZWQgaWNvbi10YWJsZXItZmlsZSI+PHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyIDJsLjExNyAuMDA3YTEgMSAwIDAgMSAuODc2IC44NzZsLjAwNyAuMTE3djRsLjAwNSAuMTVhMiAyIDAgMCAwIDEuODM4IDEuODQ0bC4xNTcgLjAwNmg0bC4xMTcgLjAwN2ExIDEgMCAwIDEgLjg3NiAuODc2bC4wMDcgLjExN3Y5YTMgMyAwIDAgMSAtMi44MjQgMi45OTVsLS4xNzYgLjAwNWgtMTBhMyAzIDAgMCAxIC0yLjk5NSAtMi44MjRsLS4wMDUgLS4xNzZ2LTE0YTMgMyAwIDAgMSAyLjgyNCAtMi45OTVsLjE3NiAtLjAwNWg1eiIgLz48cGF0aCBkPSJNMTkgN2gtNGwtLjAwMSAtNC4wMDF6IiAvPjwvc3ZnPg==);
 }
 
@@ -3030,7 +3032,8 @@ ul.dataview-ul {
    --callout-icon-mask: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJjdXJyZW50Q29sb3IiIGNsYXNzPSJpY29uIGljb24tdGFibGVyIGljb25zLXRhYmxlci1maWxsZWQgaWNvbi10YWJsZXItZmF2aWNvbiI+PHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE5IDRhNCA0IDAgMCAxIDQgNHY4YTQgNCAwIDAgMSAtNCA0aC0xNGE0IDQgMCAwIDEgLTQgLTR2LThhNCA0IDAgMCAxIDQgLTR6bS0xMyA1YTEgMSAwIDAgMCAtMSAxdjRhMSAxIDAgMCAwIDIgMHYtNGExIDEgMCAwIDAgLTEgLTFtNSAwYTMgMyAwIDAgMCAwIDZhMSAxIDAgMCAwIC4xMTcgLTEuOTkzbC0uMTE3IC0uMDA3YTEgMSAwIDAgMSAtLjExNyAtMS45OTNsLjExNyAtLjAwN2ExIDEgMCAwIDAgMCAtMm01IDBhMyAzIDAgMCAwIC0yLjk5NSAyLjgyNGwtLjAwNSAuMTc2YTMgMyAwIDEgMCAzIC0zIiAvPjxwYXRoIGQ9Ik0xNiAxMWExIDEgMCAxIDAgMCAyYTEgMSAwIDAgMCAwIC0yIiAvPjwvc3ZnPg==);
 }
 
-.callout[data-callout="clipboard"] {
+.callout[data-callout="clipboard"],
+.callout[data-callout="list"] {
    border-color: hsla(var(--primary-violet), var(--callout-border-opacity));
    background-color: hsla(var(--primary-violet), var(--callout-background-color-opacity));
    --callout-title-color: hsl(var(--primary-violet));

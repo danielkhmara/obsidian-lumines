@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.41
+Lumines Obsidian Version: 1.1.0-alpha.42
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -4350,9 +4350,9 @@ settings:
       id: hide-button-auto-reveal
       type: class-toggle
       title: “Auto-reveal” button
-      title.ru: Кнопка «Автораскрытие»
+      title.ru: Кнопка «Автораскрыть»
       description: Hide “Auto-reveal” button.
-      description.ru: Скрыть кнопку «Автораскрытие».
+      description.ru: Скрыть кнопку «Автораскрыть».
    -
       id: hide-button-collapse-all
       type: class-toggle

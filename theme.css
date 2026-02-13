@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.45
+Lumines Obsidian Version: 1.1.0-alpha.46
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -174,6 +174,7 @@ body {
    --nav-item-color-active: var(--color-base-70);
 
    --custom-icon-size: 1.2em;
+   --filename-margin-bottom: 0.8rem;
    --divider-color: var(--color-base-10);
    --icon-color-active: var(--color-base-80);
    --prompt-border-color: var(--color-base-10);
@@ -218,7 +219,7 @@ body {
    --h5-size: 1.1em;
    --h6-size: 1.0em;
 
-   --header-padding-top: .7em;
+   --header-padding-top: 0.3em;
 
    /* Section: markdown */
    --hr-color: var(--color-base-10);
@@ -228,13 +229,14 @@ body {
    --blockquote-border-color: var(--color-accent);
 
    /* Section: metadata */
-   --metadata-padding: 0;
    --pill-color-remove: var(--text-faint);
    --metadata-label-text-color: var(--text-muted);
    --metadata-input-text-color: var(--text-normal);
    --metadata-property-radius: var(--radius-m);
    --metadata-property-radius-hover: var(--radius-m);
    --metadata-property-radius-focus: var(--radius-m);
+   --metadata-margin-bottom: var(--filename-margin-bottom);
+   --metadata-padding: 0;
 
    --metadata-background: transparent;
    --metadata-border-color: transparent;
@@ -384,6 +386,7 @@ video {
    overflow: hidden;
    white-space: nowrap;
    text-overflow: ellipsis;
+   margin-bottom: var(--filename-margin-bottom);
 }
 
 /* Section: links */
@@ -547,7 +550,7 @@ ul.dataview-ul {
 .dataview.table-view-table > thead > tr > th {
    cursor: default;
    white-space: nowrap;
-   padding: .5rem var(--cell-padding-x);
+   padding: 0.5rem var(--cell-padding-x);
    border-bottom: 1px solid var(--color-base-10);
    background-color: var(--color-base-00);
 }
@@ -595,7 +598,7 @@ ul.dataview-ul {
 
 .dataview.result-group {
    padding-left: 0;
-   padding: .5rem 0 .5rem;
+   padding: 0.5rem 0 0.5rem;
 }
 
 .dataview.dataview-error {
@@ -621,7 +624,7 @@ ul.dataview-ul {
    animation:
       cosmic-pulse 8s cubic-bezier(0.4, 0, 0.2, 1) infinite,
       gentle-drift 16s linear infinite;
-   opacity: .7;
+   opacity: 0.7;
    filter: blur(8px);
 }
 
@@ -646,24 +649,28 @@ ul.dataview-ul {
    animation:
       cosmic-pulse 8s cubic-bezier(0.4, 0, 0.2, 1) infinite,
       gentle-drift 16s linear infinite;
-   opacity: .7;
+   opacity: 0.7;
    filter: blur(8px);
 }
 
 @keyframes cosmic-pulse {
    0%, 100% {
-      opacity: .4;
+      opacity: 0.4;
       transform: scale(0.95);
    }
    50% {
-      opacity: .8;
+      opacity: 0.8;
       transform: scale(1.05);
    }
 }
 
 /* Section: metadata */
 .metadata-container {
-   margin-block-end: .35rem;
+   margin-bottom: var(--metadata-margin-bottom);
+}
+
+.metadata-properties-heading {
+   margin-bottom: calc(var(--metadata-margin-bottom) / 2);
 }
 
 .metadata-property-key,
@@ -3710,14 +3717,14 @@ input[type="checkbox"]:checked::after {
    content: '';
    width: 6px;
    height: 6px;
-   opacity: .1;
+   opacity: 0.1;
    flex-shrink: 0;
    border-radius: 50%;
    margin-right: 15px;
    margin-inline-start: auto;
    transform: translateY(-50%);
    background-color: var(--color-base-70);
-   transition: opacity .5s cubic-bezier(0.25, 0.1, 0.25, 1);
+   transition: opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 :is(.nav-file-title, .bookmark):is(:hover, .is-active)::after {
@@ -3999,7 +4006,11 @@ input[type="checkbox"]:checked::after {
 
 /* Section: headers-padding-top */
 .cm-s-obsidian .cm-line.HyperMD-header {
-   padding-top: var(--header-padding-top);
+   padding-top: var(--header-padding-top) !important;
+}
+
+.cm-s-obsidian .cm-line.HyperMD-header:nth-child(2) {
+   padding-top: 0 !important;
 }
 
 /* Section: hide-icon-or-button */
@@ -4306,7 +4317,7 @@ settings:
       title.ru: Верхний отступ заголовка
       description: Enter the value in em units.
       description.ru: Задайте значение в em единицах.
-      default: .7
+      default: 0.3
       format: em
    -
       type: heading

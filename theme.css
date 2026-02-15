@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.0-alpha.47
+Lumines Obsidian Version: 1.1.0-alpha.48
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -3939,6 +3939,11 @@ input[type="checkbox"]:checked::after {
    /* Section: sidebar-title */
    .workspace-drawer-header-name-text {
       white-space: nowrap;
+      font-size: 1.1rem !important;
+   }
+
+   .workspace-drawer-header-info {
+      font-size: 0.9rem;
    }
 
    /* Section: sidebar-files */

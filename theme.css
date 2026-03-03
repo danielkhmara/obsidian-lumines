@@ -5,7 +5,7 @@ Created by Daniel (@danielkhmara) | https://github.com/danielkhmara/obsidian-lum
 
 ---------------------------------------------------------------------------------------
 
-Lumines Obsidian Version: 1.1.1-alpha.3
+Lumines Obsidian Version: 1.1.1-alpha.4
 Support Obsidian Version: 1.0.0+
 
 ---------------------------------------------------------------------------------------
@@ -183,17 +183,17 @@ body {
    --filename-margin-bottom: 0.8rem;
    --divider-color: var(--background-primary-alt);
    --icon-color-active: var(--color-base-80);
-   --prompt-border-color: var(--color-base-10);
-   --table-header-background: var(--color-base-05);
+   --prompt-border-color: var(--background-primary-alt);
+   --table-header-background: var(--background-secondary);
    --slider-track-background: var(--components-background);
-   --search-result-background: var(--color-base-05);
+   --search-result-background: var(--background-secondary);
    --collapse-icon-color-collapsed: var(--color-accent);
 
    --modal-radius: var(--radius-m);
    --modal-border-color: var(--divider-color);
 
-   --titlebar-background: var(--color-base-05);
-   --titlebar-background-focused: var(--color-base-05);
+   --titlebar-background: var(--background-secondary);
+   --titlebar-background-focused: var(--background-secondary);
 
    --background-modifier-border: var(--components-background);
    --background-modifier-border-hover: transparent;
@@ -233,7 +233,7 @@ body {
    --setting-items-background: var(--background-secondary);
 
    /* Section: markdown */
-   --hr-color: var(--color-base-10);
+   --hr-color: var(--background-primary-alt);
    --tag-color: var(--color-accent);
    --bold-color: var(--color-accent);
    --italic-color: var(--color-accent);
@@ -289,9 +289,9 @@ body {
    --code-normal: var(--color-base-80);
    --code-comment: var(--text-faint);
    --code-operator: var(--color-base-80);
-   --code-background: var(--color-base-05);
+   --code-background: var(--background-secondary);
    --code-punctuation: var(--color-base-70);
-   --code-border-color: var(--color-base-10);
+   --code-border-color: var(--background-primary-alt);
    --code-border-width: 1px;
 
    --code-tag: rgb(224, 108, 117);
@@ -347,7 +347,7 @@ body {
    --graph-line: var(--color-base-30, var(--background-modifier-border-focus));
 
    /* Section: bases */
-   --bases-embed-border-color: var(--color-base-10);
+   --bases-embed-border-color: var(--background-primary-alt);
    --bases-embed-border-radius: var(--radius-m);
    --bases-table-container-border-width: 1px;
    --bases-table-container-border-radius: var(--radius-m);
@@ -503,13 +503,13 @@ button:not(.clickable-icon):hover {
 
 /* Section: (key:: value) */
 .inline-field-standalone-value {
-   background-color: var(--color-base-10) !important;
+   background-color: var(--background-primary-alt) !important;
    border-radius: var(--radius-s);
 }
 
 /* Section: [key:: value] */
 .inline-field-key {
-   background-color: var(--color-base-10) !important;
+   background-color: var(--background-primary-alt) !important;
    border-radius: var(--radius-s) 0 0 var(--radius-s);
 }
 
@@ -590,7 +590,7 @@ ul.dataview-ul {
 .block-language-dataview,
 .cm-preview-code-block.cm-embed-block.markdown-rendered,
 .cm-preview-code-block.cm-embed-block.markdown-rendered:hover {
-   outline: 1px solid var(--color-base-10) !important;
+   outline: 1px solid var(--background-primary-alt) !important;
    border-radius: var(--radius-m) !important;
 }
 
@@ -602,8 +602,8 @@ ul.dataview-ul {
    cursor: default;
    white-space: nowrap;
    padding: 0.5rem var(--cell-padding-x);
-   border-bottom: 1px solid var(--color-base-10);
-   background-color: var(--color-base-00);
+   border-bottom: 1px solid var(--background-primary-alt);
+   background-color: var(--background-primary);
 }
 
 .dataview.table-view-table:has(> thead > tr > th:nth-child(4)) {
@@ -639,12 +639,12 @@ ul.dataview-ul {
 
 .dataview.table-view-table > tbody > tr,
 .dataview.table-view-table > tbody > tr:hover {
-   background-color: var(--color-base-05);
+   background-color: var(--background-secondary);
 }
 
 .dataview.table-view-table > tbody > tr:nth-child(2n),
 .dataview.table-view-table > tbody > tr:hover:nth-child(2n) {
-   background-color: var(--color-base-00) !important;
+   background-color: var(--background-primary) !important;
 }
 
 .dataview.result-group {

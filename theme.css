@@ -4429,49 +4429,49 @@ settings:
    -
       id: hide-button-new-note
       type: class-toggle
-      title: "New note" button
+      title: '"New note" button'
       title.ru: Кнопка «Новый файл»
       description: Hide "New note" button.
       description.ru: Скрыть кнопку «Новый файл».
    -
       id: hide-button-new-folder
       type: class-toggle
-      title: "New folder" button
+      title: '"New folder" button'
       title.ru: Кнопка «Новая папка»
       description: Hide "New folder" button.
       description.ru: Скрыть кнопку «Новая папка».
    -
       id: hide-button-sort-order
       type: class-toggle
-      title: "Sort order" button
+      title: '"Sort order" button'
       title.ru: Кнопка «Отсортировать»
       description: Hide "Sort order" button.
       description.ru: Скрыть кнопку «Отсортировать».
    -
       id: hide-button-auto-reveal
       type: class-toggle
-      title: "Auto-reveal" button
+      title: '"Auto-reveal" button'
       title.ru: Кнопка «Автораскрыть»
       description: Hide "Auto-reveal" button.
       description.ru: Скрыть кнопку «Автораскрыть».
    -
       id: hide-button-collapse-all
       type: class-toggle
-      title: "Collapse all" button
+      title: '"Collapse all" button'
       title.ru: Кнопка «Свернуть все»
       description: Hide "Collapse all" button.
       description.ru: Скрыть кнопку «Свернуть все».
    -
       id: hide-button-reading-mode
       type: class-toggle
-      title: "Reading mode" button
+      title: '"Reading mode" button'
       title.ru: Кнопка «Режим чтения»
       description: Hide "Reading mode" button.
       description.ru: Скрыть кнопку «Режим чтения».
    -
       id: hide-button-search-settings
       type: class-toggle
-      title: "Search settings" button
+      title: '"Search settings" button'
       title.ru: Кнопка «Настройки поиска»
       description: Hide "Search settings" button.
       description.ru: Скрыть кнопку «Настройки поиска».
@@ -4490,7 +4490,7 @@ settings:
    -
       id: hide-icon-mobile-chevrons
       type: class-toggle
-      title: "Mobile chevrons" icon
+      title: '"Mobile chevrons" icon'
       title.ru: Иконка «Мобильные стрелки»
       description: Hide "Mobile chevrons" icon.
       description.ru: Скрыть иконку «Мобильные стрелки».
@@ -4503,42 +4503,42 @@ settings:
    -
       id: hide-button-mobile-navbar-action-back
       type: class-toggle
-      title: "Navigate back" button
+      title: '"Navigate back" button'
       title.ru: Кнопка «Вернуться назад»
       description: Hide "Navigate back" button.
       description.ru: Скрыть кнопку «Вернуться назад».
    -
       id: hide-button-mobile-navbar-action-forward
       type: class-toggle
-      title: "Navigate forward" button
+      title: '"Navigate forward" button'
       title.ru: Кнопка «Вернуться вперед»
       description: Hide "Navigate forward" button.
       description.ru: Скрыть кнопку «Вернуться вперед».
    -
       id: hide-button-mobile-navbar-action-quick-switcher
       type: class-toggle
-      title: "Quick switcher" button
+      title: '"Quick switcher" button'
       title.ru: Кнопка «Быстрый переход»
       description: Hide "Quick switcher" button.
       description.ru: Скрыть кнопку «Быстрый переход».
    -
       id: hide-button-mobile-navbar-action-new-tab
       type: class-toggle
-      title: "New tab" button
+      title: '"New tab" button'
       title.ru: Кнопка «Новая вкладка»
       description: Hide "New tab" button.
       description.ru: Скрыть кнопку «Новая вкладка».
    -
       id: hide-button-mobile-navbar-action-tabs
       type: class-toggle
-      title: "Open tabs" button
+      title: '"Open tabs" button'
       title.ru: Кнопка «Открыть вкладки»
       description: Hide "Open tabs" button.
       description.ru: Скрыть кнопку «Открыть вкладки».
    -
       id: hide-button-mobile-navbar-action-menu
       type: class-toggle
-      title: "Ribbon menu" button
+      title: '"Ribbon menu" button'
       title.ru: Кнопка «Выпадающее меню»
       description: Hide "Ribbon menu" button.
       description.ru: Скрыть кнопку «Выпадающее меню».
@@ -4563,7 +4563,7 @@ settings:
    -
       id: hide-button-help
       type: class-toggle
-      title: "Help" button
+      title: '"Help" button'
       title.ru: Кнопка «Помощь»
       description: Hide "Help" button.
       description.ru: Скрыть кнопку «Помощь».
@@ -4576,7 +4576,7 @@ settings:
    -
       id: order-navbar-button-nth-child-1
       type: class-select
-      title: "Navigate back" button
+      title: '"Navigate back" button'
       title.ru: Кнопка «Вернуться назад»
       description: Select the position for the 1st button.
       description.ru: Выберите позицию для 1-ой кнопки.
@@ -4603,7 +4603,7 @@ settings:
    -
       id: order-navbar-button-nth-child-2
       type: class-select
-      title: "Navigate forward" button
+      title: '"Navigate forward" button'
       title.ru: Кнопка «Вернуться вперед»
       description: Select the position for the 2nd button.
       description.ru: Выберите позицию для 2-ой кнопки.
@@ -4630,7 +4630,7 @@ settings:
    -
       id: order-navbar-button-nth-child-3
       type: class-select
-      title: "Quick switcher" button
+      title: '"Quick switcher" button'
       title.ru: Кнопка «Быстрый переход»
       description: Select the position for the 3rd button.
       description.ru: Выберите позицию для 3-ей кнопки.
@@ -4657,7 +4657,7 @@ settings:
    -
       id: order-navbar-button-nth-child-4
       type: class-select
-      title: "New tab" button
+      title: '"New tab" button'
       title.ru: Кнопка «Новая вкладка»
       description: Select the position for the 4th button.
       description.ru: Выберите позицию для 4-ой кнопки.
@@ -4684,7 +4684,7 @@ settings:
    -
       id: order-navbar-button-nth-child-5
       type: class-select
-      title: "Open tabs" button
+      title: '"Open tabs" button'
       title.ru: Кнопка «Открыть вкладки»
       description: Select the position for the 5th button.
       description.ru: Выберите позицию для 5-ой кнопки.
@@ -4711,7 +4711,7 @@ settings:
    -
       id: order-navbar-button-nth-child-6
       type: class-select
-      title: "Ribbon menu" button
+      title: '"Ribbon menu" button'
       title.ru: Кнопка «Выпадающее меню»
       description: Select the position for the 6th button.
       description.ru: Выберите позицию для 6-ой кнопки.
